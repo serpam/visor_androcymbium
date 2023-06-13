@@ -3,4 +3,4 @@
 
 ## Equipo de Trabajo
 - Antonio J. Pérez-Luque
-- CLaudia Tribaldos Anda 
+- Claudia Tribaldos Anda 
