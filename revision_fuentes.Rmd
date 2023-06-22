@@ -13,4 +13,4 @@ output: html_document
 | CSIC-RJB-MA          | si                     | 26            | 7/26        |
 | cartografíaAndalucía | reemplazada por REDIAM |               |             |
 | TercerInvNacional    | no                     | 0             | no          |
-| PlantNet             | no                     |               | no          |
+| PlantNet             | no                     | 0             | no          |
