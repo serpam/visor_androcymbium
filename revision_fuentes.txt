@@ -9,3 +9,4 @@ herbario_Valencia  								si                          2                   todos
 CSIC_RJB_MA      									si                          26                  7/26
 cartografíaAndal* 			reemplazada por REDIAM
 TercerInvNacional									no													0										no	
+PlantNet (busqueda manual)        no                          0                   no 
