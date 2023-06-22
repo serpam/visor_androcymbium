@@ -1,0 +1,2 @@
+When using this dataset please use the following citation and pay attention to the rights documented in rights.txt:
+Riera Vicent J (2020). Colección de plantas vasculares del herbario de la Universitat de València (VAL). Botanical Garden, University of Valencia. Occurrence dataset https://doi.org/10.15468/xmki52 accessed via GBIF.org on 2023-06-22.

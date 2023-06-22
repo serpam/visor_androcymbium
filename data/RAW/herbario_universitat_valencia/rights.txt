@@ -1,0 +1,2 @@
+Dataset: Colección de plantas vasculares del herbario de la Universitat de València (VAL) 
+Rights as supplied: http://creativecommons.org/licenses/by-nc/4.0/legalcode

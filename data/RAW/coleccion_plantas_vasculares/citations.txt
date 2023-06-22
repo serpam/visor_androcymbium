@@ -1,0 +1,2 @@
+When using this dataset please use the following citation and pay attention to the rights documented in rights.txt:
+CSIC-Real Jardín Botánico, Castilla F (2023). CSIC-Real Jardín Botánico-Colección de Plantas Vasculares (MA). Real Jardín Botánico (CSIC). Occurrence dataset https://doi.org/10.15468/mug7kr accessed via GBIF.org on 2023-06-22.
