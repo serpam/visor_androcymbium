@@ -1,0 +1,16 @@
+---
+title: "Untitled"
+author: "Claudia Tribaldos"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+| fuente               | registro_androcymbium  | num_registros | coordenadas |
+|----------------------|------------------------|---------------|-------------|
+| REDIAM               | no                     | 0             | no          |
+| CSIC-RJB-Anthos      | si                     | 19            | todos       |
+| herbarioValencia     | si                     | 2             | todos       |
+| CSIC-RJB-MA          | si                     | 26            | 7/26        |
+| cartografíaAndalucía | reemplazada por REDIAM |               |             |
+| TercerInvNacional    | no                     | 0             | no          |
+| PlantNet             | no                     |               | no          |
