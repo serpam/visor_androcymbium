@@ -1,0 +1,9 @@
+# Tabla revisión de fuentes 
+
+
+fuente  registro_androcymbium num_registros coordenadas
+----------------------------------------------------------
+REDIAM  no  0 no
+CSIC-RJB-Anthos si  19  todos
+herbario_Valencia si 2  todos
+
