@@ -213,5 +213,259 @@ output: html_document
 | 598&conte |        |   |        |        |             |           |
 | xt=aliso) |        |   |        |        |             |           |
 +-----------+--------+---+--------+--------+-------------+-----------+
-|           |        |   |        |        |             |           |
+| [         | J.     | 1 | si     | 10     | no,         | no        |
+| Allozymic | Ped    | 9 |        |        | poblaciones |           |
+| and       | rola-M | 9 |        |        | por         |           |
+| morp      | onfort | 4 |        |        | localidad   |           |
+| hological | & J.   |   |        |        |             |           |
+| rela      | Caju   |   |        |        |             |           |
+| tionships | apé-Ca |   |        |        |             |           |
+| among     | stells |   |        |        |             |           |
+| And       |        |   |        |        |             |           |
+| rocymbium |        |   |        |        |             |           |
+| g         |        |   |        |        |             |           |
+| ramineum, |        |   |        |        |             |           |
+| A.        |        |   |        |        |             |           |
+| e         |        |   |        |        |             |           |
+| uropaeum, |        |   |        |        |             |           |
+| and A.    |        |   |        |        |             |           |
+| psa       |        |   |        |        |             |           |
+| mmophilum |        |   |        |        |             |           |
+| (Colch    |        |   |        |        |             |           |
+| icaceae)] |        |   |        |        |             |           |
+| (https:// |        |   |        |        |             |           |
+| link.spri |        |   |        |        |             |           |
+| nger.com/ |        |   |        |        |             |           |
+| article/1 |        |   |        |        |             |           |
+| 0.1007/BF |        |   |        |        |             |           |
+| 00985346) |        |   |        |        |             |           |
++-----------+--------+---+--------+--------+-------------+-----------+
+| [Genetic  | J.     | 1 | si     | 10     | no,         | no        |
+| and       | Ped    | 9 |        |        | poblaciones |           |
+| morp      | rola-M | 9 |        |        | por         |           |
+| hological | onfort | 6 |        |        | localidad   |           |
+| d         | & J.   |   |        |        |             |           |
+| ivergence | Caju   |   |        |        |             |           |
+| in the    | apé-Ca |   |        |        |             |           |
+| And       | stells |   |        |        |             |           |
+| rocymbium |        |   |        |        |             |           |
+| gramineum |        |   |        |        |             |           |
+| complex   |        |   |        |        |             |           |
+| (Colch    |        |   |        |        |             |           |
+| icaceae)] |        |   |        |        |             |           |
+| (https:// |        |   |        |        |             |           |
+| link.spri |        |   |        |        |             |           |
+| nger.com/ |        |   |        |        |             |           |
+| article/1 |        |   |        |        |             |           |
+| 0.1007/BF |        |   |        |        |             |           |
+| 00989058) |        |   |        |        |             |           |
++-----------+--------+---+--------+--------+-------------+-----------+
+| [The      | Cauja  | 2 |        |        |             |           |
+| influence | pé-Cas | 0 |        |        |             |           |
+| of the    | tells, | 0 |        |        |             |           |
+| Miocene   | J. and | 3 |        |        |             |           |
+| Medi      | J      |   |        |        |             |           |
+| terranean | ansen, |   |        |        |             |           |
+| de        | R.K    |   |        |        |             |           |
+| siccation |        |   |        |        |             |           |
+| on the    |        |   |        |        |             |           |
+| geo       |        |   |        |        |             |           |
+| graphical |        |   |        |        |             |           |
+| expansion |        |   |        |        |             |           |
+| and       |        |   |        |        |             |           |
+| genetic   |        |   |        |        |             |           |
+| variation |        |   |        |        |             |           |
+| of        |        |   |        |        |             |           |
+| And       |        |   |        |        |             |           |
+| rocymbium |        |   |        |        |             |           |
+| gramineum |        |   |        |        |             |           |
+| (Cav.)    |        |   |        |        |             |           |
+| McBride   |        |   |        |        |             |           |
+| (Colchic  |        |   |        |        |             |           |
+| aceae)](h |        |   |        |        |             |           |
+| ttps://on |        |   |        |        |             |           |
+| linelibra |        |   |        |        |             |           |
+| ry.wiley. |        |   |        |        |             |           |
+| com/doi/a |        |   |        |        |             |           |
+| bs/10.104 |        |   |        |        |             |           |
+| 6/j.1365- |        |   |        |        |             |           |
+| 294X.2003 |        |   |        |        |             |           |
+| .01839.x) |        |   |        |        |             |           |
++-----------+--------+---+--------+--------+-------------+-----------+
+| [Spa      | J.     | 1 | si     | 1      | no,         | no        |
+| ce---time | Ped    | 9 |        |        | población   |           |
+| patterns  | rola-M | 9 |        |        | por         |           |
+| of        | onfort | 6 |        |        | localidad   |           |
+| genetic   | & J.   |   |        |        |             |           |
+| struct    | Caju   |   |        |        |             |           |
+| urewithin | apé-Ca |   |        |        |             |           |
+| a stand   | stells |   |        |        |             |           |
+| of        |        |   |        |        |             |           |
+| And       |        |   |        |        |             |           |
+| rocymbium |        |   |        |        |             |           |
+| gramineum |        |   |        |        |             |           |
+| (Cay.)    |        |   |        |        |             |           |
+| McBride   |        |   |        |        |             |           |
+| (Colc     |        |   |        |        |             |           |
+| hicaceae) |        |   |        |        |             |           |
+| ](https:/ |        |   |        |        |             |           |
+| /www.natu |        |   |        |        |             |           |
+| re.com/ar |        |   |        |        |             |           |
+| ticles/hd |        |   |        |        |             |           |
+| y1997166) |        |   |        |        |             |           |
++-----------+--------+---+--------+--------+-------------+-----------+
+| [O        | Elli   | 2 | no     | 0      | no          | no        |
+| ccurrence | ngton, | 0 |        |        |             |           |
+| of        | E.,    | 0 |        |        |             |           |
+| c         | Ba     | 3 |        |        |             |           |
+| olchicine | stida, |   |        |        |             |           |
+| de        | J.,    |   |        |        |             |           |
+| rivatives | Vila   |   |        |        |             |           |
+| in plants | domat, |   |        |        |             |           |
+| of the    | F.,    |   |        |        |             |           |
+| genus     | Si     |   |        |        |             |           |
+| And       | manek, |   |        |        |             |           |
+| rocymbium | V., &  |   |        |        |             |           |
+| ](https:/ | C      |   |        |        |             |           |
+| /www.scie | odina, |   |        |        |             |           |
+| ncedirect | C.     |   |        |        |             |           |
+| .com/scie |        |   |        |        |             |           |
+| nce/artic |        |   |        |        |             |           |
+| le/pii/S0 |        |   |        |        |             |           |
+| 305197802 |        |   |        |        |             |           |
+| 00248X?vi |        |   |        |        |             |           |
+| a%3Dihub) |        |   |        |        |             |           |
++-----------+--------+---+--------+--------+-------------+-----------+
+| [Pollen   | M      | 1 |        |        |             |           |
+| m         | artin, | 9 |        |        |             |           |
+| orphology | J.,    | 9 |        |        |             |           |
+| and       | Pedr   | 3 |        |        |             |           |
+| biometry  | ola-Mo |   |        |        |             |           |
+| in        | nfort, |   |        |        |             |           |
+| And       | J.,    |   |        |        |             |           |
+| rocymbium | Ca     |   |        |        |             |           |
+| (Colchic  | ujapé, |   |        |        |             |           |
+| aceae)](h | J.     |   |        |        |             |           |
+| ttps://cd |        |   |        |        |             |           |
+| nsciencep |        |   |        |        |             |           |
+| ub.com/do |        |   |        |        |             |           |
+| i/10.1139 |        |   |        |        |             |           |
+| /b93-163) |        |   |        |        |             |           |
++-----------+--------+---+--------+--------+-------------+-----------+
+| [Kar      | Ma     | 1 |        |        |             |           |
+| yological | rgelí, | 9 |        |        |             |           |
+| Studies   | M.,    | 9 |        |        |             |           |
+| in the    | Pedr   | 9 |        |        |             |           |
+| Genus     | ola-Mo |   |        |        |             |           |
+| And       | nfort, |   |        |        |             |           |
+| rocymbium | J.,    |   |        |        |             |           |
+| (C        | V      |   |        |        |             |           |
+| olchicace | allés, |   |        |        |             |           |
+| ae)](http | J.     |   |        |        |             |           |
+| s://www.p |        |   |        |        |             |           |
+| ublish.cs |        |   |        |        |             |           |
+| iro.au/bt |        |   |        |        |             |           |
+| /BT97006) |        |   |        |        |             |           |
++-----------+--------+---+--------+--------+-------------+-----------+
+| [Co       | Cauja  | 1 | no     | 0      | no          | no        |
+| ntrasting | pé-Cas | 9 |        |        |             |           |
+| patterns  | tells, | 9 |        |        |             |           |
+| of        | J.,    | 9 |        |        |             |           |
+| genetic   | Pedr   |   |        |        |             |           |
+| structure | ola-Mo |   |        |        |             |           |
+| in the    | nfort, |   |        |        |             |           |
+| South     | J.,    |   |        |        |             |           |
+| African   | Memb   |   |        |        |             |           |
+| species   | rives, |   |        |        |             |           |
+| And       | N.     |   |        |        |             |           |
+| rocymbium |        |   |        |        |             |           |
+| bellum,   |        |   |        |        |             |           |
+| A.        |        |   |        |        |             |           |
+| guttatum  |        |   |        |        |             |           |
+| and A.    |        |   |        |        |             |           |
+| pulchrum  |        |   |        |        |             |           |
+| (Colc     |        |   |        |        |             |           |
+| hicaceae) |        |   |        |        |             |           |
+| ](https:/ |        |   |        |        |             |           |
+| /www.scie |        |   |        |        |             |           |
+| ncedirect |        |   |        |        |             |           |
+| .com/scie |        |   |        |        |             |           |
+| nce/artic |        |   |        |        |             |           |
+| le/pii/S0 |        |   |        |        |             |           |
+| 305197898 |        |   |        |        |             |           |
+| 001306?vi |        |   |        |        |             |           |
+| a%3Dihub) |        |   |        |        |             |           |
++-----------+--------+---+--------+--------+-------------+-----------+
+| [Relative | Memb   | 2 | no     | 0      | no          | no        |
+| influence | rives, | 0 |        |        |             |           |
+| of        | N.Pedr | 0 |        |        |             |           |
+| b         | ola-Mo | 1 |        |        |             |           |
+| iological | nfort, |   |        |        |             |           |
+| versus    | J.,    |   |        |        |             |           |
+| h         | Cauja  |   |        |        |             |           |
+| istorical | pé-Cas |   |        |        |             |           |
+| factors   | tells, |   |        |        |             |           |
+| on        | J.     |   |        |        |             |           |
+| isozyme   |        |   |        |        |             |           |
+| variation |        |   |        |        |             |           |
+| of the    |        |   |        |        |             |           |
+| genus     |        |   |        |        |             |           |
+| And       |        |   |        |        |             |           |
+| rocymbium |        |   |        |        |             |           |
+| (Colc     |        |   |        |        |             |           |
+| hicaceae) |        |   |        |        |             |           |
+| in        |        |   |        |        |             |           |
+| A         |        |   |        |        |             |           |
+| frica](ht |        |   |        |        |             |           |
+| tps://lin |        |   |        |        |             |           |
+| k.springe |        |   |        |        |             |           |
+| r.com/art |        |   |        |        |             |           |
+| icle/10.1 |        |   |        |        |             |           |
+| 007/s0060 |        |   |        |        |             |           |
+| 60170013) |        |   |        |        |             |           |
++-----------+--------+---+--------+--------+-------------+-----------+
+| [         | M      | 2 | no     | 0      | no          | no        |
+| Allozymic | ateu-A | 0 |        |        |             |           |
+| variation | ndrés, | 0 |        |        |             |           |
+| and       | I.     | 8 |        |        |             |           |
+| d         |        |   |        |        |             |           |
+| ivergence |        |   |        |        |             |           |
+| in        |        |   |        |        |             |           |
+| thr       |        |   |        |        |             |           |
+| eespecies |        |   |        |        |             |           |
+| of        |        |   |        |        |             |           |
+| Ant       |        |   |        |        |             |           |
+| irrhinurn |        |   |        |        |             |           |
+| L.        |        |   |        |        |             |           |
+| (Scrophu  |        |   |        |        |             |           |
+| lariaceae |        |   |        |        |             |           |
+| -Antirrhi |        |   |        |        |             |           |
+| neae)](ht |        |   |        |        |             |           |
+| tps://aca |        |   |        |        |             |           |
+| demic.oup |        |   |        |        |             |           |
+| .com/botl |        |   |        |        |             |           |
+| innean/ar |        |   |        |        |             |           |
+| ticle/131 |        |   |        |        |             |           |
+| /2/187/25 |        |   |        |        |             |           |
+| 67128?log |        |   |        |        |             |           |
+| in=false) |        |   |        |        |             |           |
++-----------+--------+---+--------+--------+-------------+-----------+
+| [Plant    | Franc  | 2 | no     | 0      | no          | no        |
+| genetic   | isco-O | 0 |        |        |             |           |
+| diversity | rtega, | 0 |        |        |             |           |
+| in the    | J.,    | 0 |        |        |             |           |
+| Canary    | Sa     |   |        |        |             |           |
+| Islands:  | ntos-G |   |        |        |             |           |
+| a         | uerra, |   |        |        |             |           |
+| con       | A.,    |   |        |        |             |           |
+| servation | Chul   |   |        |        |             |           |
+| p         | Kim,   |   |        |        |             |           |
+| erspectiv | S.,    |   |        |        |             |           |
+| e](https: | Cra    |   |        |        |             |           |
+| //bsapubs | wford, |   |        |        |             |           |
+| .onlineli | D. J.  |   |        |        |             |           |
+| brary.wil |        |   |        |        |             |           |
+| ey.com/do |        |   |        |        |             |           |
+| i/10.2307 |        |   |        |        |             |           |
+| /2656988) |        |   |        |        |             |           |
 +-----------+--------+---+--------+--------+-------------+-----------+
