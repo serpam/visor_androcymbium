@@ -5,467 +5,1825 @@ date: '`r Sys.Date()`'
 output: html_document
 ---
 
-+-----------+--------+---+--------+--------+-------------+-----------+
-| titulo    | a      | a | re     | número | coordenadas | in        |
-| artículo  | utores | ñ | gistro | reg    |             | formación |
-|           | y año  | o | a.     | istros |             | adicional |
-|           |        |   | eur    |        |             |           |
-|           |        |   | opaeum |        |             |           |
-+===========+========+===+========+========+=============+===========+
-| [Ch       | Cauja  | 1 | si     | 9      | no          | no        |
-| loroplast | pe-Cas | 9 |        |        |             |           |
-| DNA       | tells, | 9 |        |        |             |           |
-| Re        | J.,    | 9 |        |        |             |           |
-| striction | J      |   |        |        |             |           |
-| Site      | ansen, |   |        |        |             |           |
-| Phylogeny | R. K., |   |        |        |             |           |
-| of the    | Pedr   |   |        |        |             |           |
-| Genus     | ola-Mo |   |        |        |             |           |
-| And       | nfort, |   |        |        |             |           |
-| rocymbium | J., &  |   |        |        |             |           |
-| (Colchic  | Memb   |   |        |        |             |           |
-| aceae)](h | rives, |   |        |        |             |           |
-| ttps://sc | N.     |   |        |        |             |           |
-| i-hub.se/ |        |   |        |        |             |           |
-| https://w |        |   |        |        |             |           |
-| ww.jstor. |        |   |        |        |             |           |
-| org/stabl |        |   |        |        |             |           |
-| e/2419644 |        |   |        |        |             |           |
-| ?origin=c |        |   |        |        |             |           |
-| rossref#) |        |   |        |        |             |           |
-+-----------+--------+---+--------+--------+-------------+-----------+
-| [Con      | Montse | 1 | si     | 8      | no, pero si | si        |
-| tribución | rrat-R | 9 |        |        | l           |           |
-| al        | ecoder | 6 |        |        | ocalización |           |
-| Con       |        | 1 |        |        | aproximada  |           |
-| ocimiento |        |   |        |        |             |           |
-| de los    |        |   |        |        |             |           |
-| Pastos    |        |   |        |        |             |           |
-| Al        |        |   |        |        |             |           |
-| merienses |        |   |        |        |             |           |
-| 1](       |        |   |        |        |             |           |
-| https://c |        |   |        |        |             |           |
-| ore.ac.uk |        |   |        |        |             |           |
-| /download |        |   |        |        |             |           |
-| /pdf/3609 |        |   |        |        |             |           |
-| 3726.pdf) |        |   |        |        |             |           |
-+-----------+--------+---+--------+--------+-------------+-----------+
-| [Cor      | N.     | 2 | no     | 0      | no          | no        |
-| relations | Memb   | 0 |        |        |             |           |
-| between   | rives, | 0 |        |        |             |           |
-| morpho    | J.     | 3 |        |        |             |           |
-| logical-a | Ped    |   |        |        |             |           |
-| natomical | rola-M |   |        |        |             |           |
-| leaf      | onfort |   |        |        |             |           |
-| charac    | & J.   |   |        |        |             |           |
-| teristics | Caju   |   |        |        |             |           |
-| and       | apé-Ca |   |        |        |             |           |
-| envi      | stells |   |        |        |             |           |
-| ronmental |        |   |        |        |             |           |
-| traits in |        |   |        |        |             |           |
-| southwest |        |   |        |        |             |           |
-| african   |        |   |        |        |             |           |
-| species   |        |   |        |        |             |           |
-| of        |        |   |        |        |             |           |
-| And       |        |   |        |        |             |           |
-| rocymbium |        |   |        |        |             |           |
-| (Colch    |        |   |        |        |             |           |
-| icaceae)] |        |   |        |        |             |           |
-| (http://w |        |   |        |        |             |           |
-| ww.step.e |        |   |        |        |             |           |
-| s/jardcan |        |   |        |        |             |           |
-| /73Membri |        |   |        |        |             |           |
-| ves,Pedro |        |   |        |        |             |           |
-| laMonfort |        |   |        |        |             |           |
-| &Caujape- |        |   |        |        |             |           |
-| Castells2 |        |   |        |        |             |           |
-| 003a.pdf) |        |   |        |        |             |           |
-+-----------+--------+---+--------+--------+-------------+-----------+
-| [De       | Mül    | 2 | no     | 0      | no          | no        |
-| Li        | ler-Do | 0 |        |        |             |           |
-| liifloris | blies, | 0 |        |        |             |           |
-| Notulae7. | U., &  | 2 |        |        |             |           |
-| De        | Mül    |   |        |        |             |           |
-| decuria   | ler-Do |   |        |        |             |           |
-| altera    | blies, |   |        |        |             |           |
-| specierum | D.     |   |        |        |             |           |
-| novarum   |        |   |        |        |             |           |
-| generis   |        |   |        |        |             |           |
-| Androcym  |        |   |        |        |             |           |
-| bium(Colc |        |   |        |        |             |           |
-| hicaceae) |        |   |        |        |             |           |
-| in Africa |        |   |        |        |             |           |
-| Australi  |        |   |        |        |             |           |
-| s.l](ht   |        |   |        |        |             |           |
-| tps://sci |        |   |        |        |             |           |
-| -hub.se/h |        |   |        |        |             |           |
-| ttps://on |        |   |        |        |             |           |
-| linelibra |        |   |        |        |             |           |
-| ry.wiley. |        |   |        |        |             |           |
-| com/doi/e |        |   |        |        |             |           |
-| pdf/10.10 |        |   |        |        |             |           |
-| 02/fedr.2 |        |   |        |        |             |           |
-| 00290006) |        |   |        |        |             |           |
-+-----------+--------+---+--------+--------+-------------+-----------+
-| [         | Cauja  | 2 | si     | 9      | no,         | si        |
-| Designing | pé-Cas | 0 |        |        | poblaciones |           |
-| ex-situ   | tells, | 0 |        |        | por         |           |
-| con       | J.,    | 4 |        |        | localidad   |           |
-| servation | Pedr   |   |        |        |             |           |
-| s         | ola-Mo |   |        |        |             |           |
-| trategies | nfort, |   |        |        |             |           |
-| through   | J      |   |        |        |             |           |
-| the       |        |   |        |        |             |           |
-| a         |        |   |        |        |             |           |
-| ssessment |        |   |        |        |             |           |
-| of        |        |   |        |        |             |           |
-| neutral   |        |   |        |        |             |           |
-| genetic   |        |   |        |        |             |           |
-| markers:  |        |   |        |        |             |           |
-| Ap        |        |   |        |        |             |           |
-| plication |        |   |        |        |             |           |
-| to the    |        |   |        |        |             |           |
-| e         |        |   |        |        |             |           |
-| ndangered |        |   |        |        |             |           |
-| And       |        |   |        |        |             |           |
-| rocymbium |        |   |        |        |             |           |
-| gramin    |        |   |        |        |             |           |
-| eum](http |        |   |        |        |             |           |
-| s://link. |        |   |        |        |             |           |
-| springer. |        |   |        |        |             |           |
-| com/artic |        |   |        |        |             |           |
-| le/10.102 |        |   |        |        |             |           |
-| 3/B:COGE. |        |   |        |        |             |           |
-| 000002999 |        |   |        |        |             |           |
-| 7.59502.8 |        |   |        |        |             |           |
-| 8#citeas) |        |   |        |        |             |           |
-+-----------+--------+---+--------+--------+-------------+-----------+
-| [Flora de | S      | 1 | si     | 0      | no,         | si        |
-| Almería:  | agredo | 9 |        |        | poblaciones |           |
-| plantas   | Arnaiz | 8 |        |        | por         |           |
-| v         |        | 7 |        |        | localidad   |           |
-| asculares |        |   |        |        |             |           |
-| de la     |        |   |        |        |             |           |
-| provi     |        |   |        |        |             |           |
-| ncia](htt |        |   |        |        |             |           |
-| ps://www. |        |   |        |        |             |           |
-| dipalme.o |        |   |        |        |             |           |
-| rg/Servic |        |   |        |        |             |           |
-| ios/Anexo |        |   |        |        |             |           |
-| s/anexosi |        |   |        |        |             |           |
-| ea.nsf/VA |        |   |        |        |             |           |
-| nexos/IEA |        |   |        |        |             |           |
-| -FA-f-c2/ |        |   |        |        |             |           |
-| $File/FA- |        |   |        |        |             |           |
-| f-c2.pdf) |        |   |        |        |             |           |
-+-----------+--------+---+--------+--------+-------------+-----------+
-| [H        | Cauja  | 2 | si     | 9      | no,         | si        |
-| istorical | pe-Cas | 0 |        |        | poblaciones |           |
-| bio       | tells, | 0 |        |        | por         |           |
-| geography | J.,    | 8 |        |        | localidad   |           |
-| of        | J      |   |        |        |             |           |
-| And       | ansen, |   |        |        |             |           |
-| rocymbium | R. K., |   |        |        |             |           |
-| Wi        | Memb   |   |        |        |             |           |
-| lld.(Colc | rives, |   |        |        |             |           |
-| hicaceae) | N.,    |   |        |        |             |           |
-| in        | Pedr   |   |        |        |             |           |
-| Africa:   | ola-Mo |   |        |        |             |           |
-| evidence  | nfort, |   |        |        |             |           |
-| from      | J.,    |   |        |        |             |           |
-| cpDNA     | Monts  |   |        |        |             |           |
-| RFLPs](ht | errat, |   |        |        |             |           |
-| tps://aca | J. M., |   |        |        |             |           |
-| demic.oup | &      |   |        |        |             |           |
-| .com/botl | Ar     |   |        |        |             |           |
-| innean/ar | danuy, |   |        |        |             |           |
-| ticle/136 | A.     |   |        |        |             |           |
-| /4/379/25 |        |   |        |        |             |           |
-| 57188?log |        |   |        |        |             |           |
-| in=false) |        |   |        |        |             |           |
-+-----------+--------+---+--------+--------+-------------+-----------+
-| [Missing  | Del    | 2 | si     | 9      | no,         | si        |
-| Links     | Hoyo,  | 0 |        |        | poblaciones |           |
-| Between   | A.,    | 0 |        |        | por         |           |
-| Disjunct  | Pedr   | 6 |        |        | localidad   |           |
-| Po        | ola-Mo |   |        |        |             |           |
-| pulations | nfort, |   |        |        |             |           |
-| of        | J.     |   |        |        |             |           |
-| And       |        |   |        |        |             |           |
-| rocymbium |        |   |        |        |             |           |
-| (Colc     |        |   |        |        |             |           |
-| hicaceae) |        |   |        |        |             |           |
-| in Africa |        |   |        |        |             |           |
-| Using     |        |   |        |        |             |           |
-| Ch        |        |   |        |        |             |           |
-| loroplast |        |   |        |        |             |           |
-| DNA       |        |   |        |        |             |           |
-| Noncoding |        |   |        |        |             |           |
-| Se        |        |   |        |        |             |           |
-| quences]( |        |   |        |        |             |           |
-| https://s |        |   |        |        |             |           |
-| cholarshi |        |   |        |        |             |           |
-| p.claremo |        |   |        |        |             |           |
-| nt.edu/cg |        |   |        |        |             |           |
-| i/viewcon |        |   |        |        |             |           |
-| tent.cgi? |        |   |        |        |             |           |
-| article=1 |        |   |        |        |             |           |
-| 598&conte |        |   |        |        |             |           |
-| xt=aliso) |        |   |        |        |             |           |
-+-----------+--------+---+--------+--------+-------------+-----------+
-| [         | J.     | 1 | si     | 10     | no,         | no        |
-| Allozymic | Ped    | 9 |        |        | poblaciones |           |
-| and       | rola-M | 9 |        |        | por         |           |
-| morp      | onfort | 4 |        |        | localidad   |           |
-| hological | & J.   |   |        |        |             |           |
-| rela      | Caju   |   |        |        |             |           |
-| tionships | apé-Ca |   |        |        |             |           |
-| among     | stells |   |        |        |             |           |
-| And       |        |   |        |        |             |           |
-| rocymbium |        |   |        |        |             |           |
-| g         |        |   |        |        |             |           |
-| ramineum, |        |   |        |        |             |           |
-| A.        |        |   |        |        |             |           |
-| e         |        |   |        |        |             |           |
-| uropaeum, |        |   |        |        |             |           |
-| and A.    |        |   |        |        |             |           |
-| psa       |        |   |        |        |             |           |
-| mmophilum |        |   |        |        |             |           |
-| (Colch    |        |   |        |        |             |           |
-| icaceae)] |        |   |        |        |             |           |
-| (https:// |        |   |        |        |             |           |
-| link.spri |        |   |        |        |             |           |
-| nger.com/ |        |   |        |        |             |           |
-| article/1 |        |   |        |        |             |           |
-| 0.1007/BF |        |   |        |        |             |           |
-| 00985346) |        |   |        |        |             |           |
-+-----------+--------+---+--------+--------+-------------+-----------+
-| [Genetic  | J.     | 1 | si     | 10     | no,         | no        |
-| and       | Ped    | 9 |        |        | poblaciones |           |
-| morp      | rola-M | 9 |        |        | por         |           |
-| hological | onfort | 6 |        |        | localidad   |           |
-| d         | & J.   |   |        |        |             |           |
-| ivergence | Caju   |   |        |        |             |           |
-| in the    | apé-Ca |   |        |        |             |           |
-| And       | stells |   |        |        |             |           |
-| rocymbium |        |   |        |        |             |           |
-| gramineum |        |   |        |        |             |           |
-| complex   |        |   |        |        |             |           |
-| (Colch    |        |   |        |        |             |           |
-| icaceae)] |        |   |        |        |             |           |
-| (https:// |        |   |        |        |             |           |
-| link.spri |        |   |        |        |             |           |
-| nger.com/ |        |   |        |        |             |           |
-| article/1 |        |   |        |        |             |           |
-| 0.1007/BF |        |   |        |        |             |           |
-| 00989058) |        |   |        |        |             |           |
-+-----------+--------+---+--------+--------+-------------+-----------+
-| [The      | Cauja  | 2 |        |        |             |           |
-| influence | pé-Cas | 0 |        |        |             |           |
-| of the    | tells, | 0 |        |        |             |           |
-| Miocene   | J. and | 3 |        |        |             |           |
-| Medi      | J      |   |        |        |             |           |
-| terranean | ansen, |   |        |        |             |           |
-| de        | R.K    |   |        |        |             |           |
-| siccation |        |   |        |        |             |           |
-| on the    |        |   |        |        |             |           |
-| geo       |        |   |        |        |             |           |
-| graphical |        |   |        |        |             |           |
-| expansion |        |   |        |        |             |           |
-| and       |        |   |        |        |             |           |
-| genetic   |        |   |        |        |             |           |
-| variation |        |   |        |        |             |           |
-| of        |        |   |        |        |             |           |
-| And       |        |   |        |        |             |           |
-| rocymbium |        |   |        |        |             |           |
-| gramineum |        |   |        |        |             |           |
-| (Cav.)    |        |   |        |        |             |           |
-| McBride   |        |   |        |        |             |           |
-| (Colchic  |        |   |        |        |             |           |
-| aceae)](h |        |   |        |        |             |           |
-| ttps://on |        |   |        |        |             |           |
-| linelibra |        |   |        |        |             |           |
-| ry.wiley. |        |   |        |        |             |           |
-| com/doi/a |        |   |        |        |             |           |
-| bs/10.104 |        |   |        |        |             |           |
-| 6/j.1365- |        |   |        |        |             |           |
-| 294X.2003 |        |   |        |        |             |           |
-| .01839.x) |        |   |        |        |             |           |
-+-----------+--------+---+--------+--------+-------------+-----------+
-| [Spa      | J.     | 1 | si     | 1      | no,         | no        |
-| ce---time | Ped    | 9 |        |        | población   |           |
-| patterns  | rola-M | 9 |        |        | por         |           |
-| of        | onfort | 6 |        |        | localidad   |           |
-| genetic   | & J.   |   |        |        |             |           |
-| struct    | Caju   |   |        |        |             |           |
-| urewithin | apé-Ca |   |        |        |             |           |
-| a stand   | stells |   |        |        |             |           |
-| of        |        |   |        |        |             |           |
-| And       |        |   |        |        |             |           |
-| rocymbium |        |   |        |        |             |           |
-| gramineum |        |   |        |        |             |           |
-| (Cay.)    |        |   |        |        |             |           |
-| McBride   |        |   |        |        |             |           |
-| (Colc     |        |   |        |        |             |           |
-| hicaceae) |        |   |        |        |             |           |
-| ](https:/ |        |   |        |        |             |           |
-| /www.natu |        |   |        |        |             |           |
-| re.com/ar |        |   |        |        |             |           |
-| ticles/hd |        |   |        |        |             |           |
-| y1997166) |        |   |        |        |             |           |
-+-----------+--------+---+--------+--------+-------------+-----------+
-| [O        | Elli   | 2 | no     | 0      | no          | no        |
-| ccurrence | ngton, | 0 |        |        |             |           |
-| of        | E.,    | 0 |        |        |             |           |
-| c         | Ba     | 3 |        |        |             |           |
-| olchicine | stida, |   |        |        |             |           |
-| de        | J.,    |   |        |        |             |           |
-| rivatives | Vila   |   |        |        |             |           |
-| in plants | domat, |   |        |        |             |           |
-| of the    | F.,    |   |        |        |             |           |
-| genus     | Si     |   |        |        |             |           |
-| And       | manek, |   |        |        |             |           |
-| rocymbium | V., &  |   |        |        |             |           |
-| ](https:/ | C      |   |        |        |             |           |
-| /www.scie | odina, |   |        |        |             |           |
-| ncedirect | C.     |   |        |        |             |           |
-| .com/scie |        |   |        |        |             |           |
-| nce/artic |        |   |        |        |             |           |
-| le/pii/S0 |        |   |        |        |             |           |
-| 305197802 |        |   |        |        |             |           |
-| 00248X?vi |        |   |        |        |             |           |
-| a%3Dihub) |        |   |        |        |             |           |
-+-----------+--------+---+--------+--------+-------------+-----------+
-| [Pollen   | M      | 1 |        |        |             |           |
-| m         | artin, | 9 |        |        |             |           |
-| orphology | J.,    | 9 |        |        |             |           |
-| and       | Pedr   | 3 |        |        |             |           |
-| biometry  | ola-Mo |   |        |        |             |           |
-| in        | nfort, |   |        |        |             |           |
-| And       | J.,    |   |        |        |             |           |
-| rocymbium | Ca     |   |        |        |             |           |
-| (Colchic  | ujapé, |   |        |        |             |           |
-| aceae)](h | J.     |   |        |        |             |           |
-| ttps://cd |        |   |        |        |             |           |
-| nsciencep |        |   |        |        |             |           |
-| ub.com/do |        |   |        |        |             |           |
-| i/10.1139 |        |   |        |        |             |           |
-| /b93-163) |        |   |        |        |             |           |
-+-----------+--------+---+--------+--------+-------------+-----------+
-| [Kar      | Ma     | 1 |        |        |             |           |
-| yological | rgelí, | 9 |        |        |             |           |
-| Studies   | M.,    | 9 |        |        |             |           |
-| in the    | Pedr   | 9 |        |        |             |           |
-| Genus     | ola-Mo |   |        |        |             |           |
-| And       | nfort, |   |        |        |             |           |
-| rocymbium | J.,    |   |        |        |             |           |
-| (C        | V      |   |        |        |             |           |
-| olchicace | allés, |   |        |        |             |           |
-| ae)](http | J.     |   |        |        |             |           |
-| s://www.p |        |   |        |        |             |           |
-| ublish.cs |        |   |        |        |             |           |
-| iro.au/bt |        |   |        |        |             |           |
-| /BT97006) |        |   |        |        |             |           |
-+-----------+--------+---+--------+--------+-------------+-----------+
-| [Co       | Cauja  | 1 | no     | 0      | no          | no        |
-| ntrasting | pé-Cas | 9 |        |        |             |           |
-| patterns  | tells, | 9 |        |        |             |           |
-| of        | J.,    | 9 |        |        |             |           |
-| genetic   | Pedr   |   |        |        |             |           |
-| structure | ola-Mo |   |        |        |             |           |
-| in the    | nfort, |   |        |        |             |           |
-| South     | J.,    |   |        |        |             |           |
-| African   | Memb   |   |        |        |             |           |
-| species   | rives, |   |        |        |             |           |
-| And       | N.     |   |        |        |             |           |
-| rocymbium |        |   |        |        |             |           |
-| bellum,   |        |   |        |        |             |           |
-| A.        |        |   |        |        |             |           |
-| guttatum  |        |   |        |        |             |           |
-| and A.    |        |   |        |        |             |           |
-| pulchrum  |        |   |        |        |             |           |
-| (Colc     |        |   |        |        |             |           |
-| hicaceae) |        |   |        |        |             |           |
-| ](https:/ |        |   |        |        |             |           |
-| /www.scie |        |   |        |        |             |           |
-| ncedirect |        |   |        |        |             |           |
-| .com/scie |        |   |        |        |             |           |
-| nce/artic |        |   |        |        |             |           |
-| le/pii/S0 |        |   |        |        |             |           |
-| 305197898 |        |   |        |        |             |           |
-| 001306?vi |        |   |        |        |             |           |
-| a%3Dihub) |        |   |        |        |             |           |
-+-----------+--------+---+--------+--------+-------------+-----------+
-| [Relative | Memb   | 2 | no     | 0      | no          | no        |
-| influence | rives, | 0 |        |        |             |           |
-| of        | N.Pedr | 0 |        |        |             |           |
-| b         | ola-Mo | 1 |        |        |             |           |
-| iological | nfort, |   |        |        |             |           |
-| versus    | J.,    |   |        |        |             |           |
-| h         | Cauja  |   |        |        |             |           |
-| istorical | pé-Cas |   |        |        |             |           |
-| factors   | tells, |   |        |        |             |           |
-| on        | J.     |   |        |        |             |           |
-| isozyme   |        |   |        |        |             |           |
-| variation |        |   |        |        |             |           |
-| of the    |        |   |        |        |             |           |
-| genus     |        |   |        |        |             |           |
-| And       |        |   |        |        |             |           |
-| rocymbium |        |   |        |        |             |           |
-| (Colc     |        |   |        |        |             |           |
-| hicaceae) |        |   |        |        |             |           |
-| in        |        |   |        |        |             |           |
-| A         |        |   |        |        |             |           |
-| frica](ht |        |   |        |        |             |           |
-| tps://lin |        |   |        |        |             |           |
-| k.springe |        |   |        |        |             |           |
-| r.com/art |        |   |        |        |             |           |
-| icle/10.1 |        |   |        |        |             |           |
-| 007/s0060 |        |   |        |        |             |           |
-| 60170013) |        |   |        |        |             |           |
-+-----------+--------+---+--------+--------+-------------+-----------+
-| [         | M      | 2 | no     | 0      | no          | no        |
-| Allozymic | ateu-A | 0 |        |        |             |           |
-| variation | ndrés, | 0 |        |        |             |           |
-| and       | I.     | 8 |        |        |             |           |
-| d         |        |   |        |        |             |           |
-| ivergence |        |   |        |        |             |           |
-| in        |        |   |        |        |             |           |
-| thr       |        |   |        |        |             |           |
-| eespecies |        |   |        |        |             |           |
-| of        |        |   |        |        |             |           |
-| Ant       |        |   |        |        |             |           |
-| irrhinurn |        |   |        |        |             |           |
-| L.        |        |   |        |        |             |           |
-| (Scrophu  |        |   |        |        |             |           |
-| lariaceae |        |   |        |        |             |           |
-| -Antirrhi |        |   |        |        |             |           |
-| neae)](ht |        |   |        |        |             |           |
-| tps://aca |        |   |        |        |             |           |
-| demic.oup |        |   |        |        |             |           |
-| .com/botl |        |   |        |        |             |           |
-| innean/ar |        |   |        |        |             |           |
-| ticle/131 |        |   |        |        |             |           |
-| /2/187/25 |        |   |        |        |             |           |
-| 67128?log |        |   |        |        |             |           |
-| in=false) |        |   |        |        |             |           |
-+-----------+--------+---+--------+--------+-------------+-----------+
-| [Plant    | Franc  | 2 | no     | 0      | no          | no        |
-| genetic   | isco-O | 0 |        |        |             |           |
-| diversity | rtega, | 0 |        |        |             |           |
-| in the    | J.,    | 0 |        |        |             |           |
-| Canary    | Sa     |   |        |        |             |           |
-| Islands:  | ntos-G |   |        |        |             |           |
-| a         | uerra, |   |        |        |             |           |
-| con       | A.,    |   |        |        |             |           |
-| servation | Chul   |   |        |        |             |           |
-| p         | Kim,   |   |        |        |             |           |
-| erspectiv | S.,    |   |        |        |             |           |
-| e](https: | Cra    |   |        |        |             |           |
-| //bsapubs | wford, |   |        |        |             |           |
-| .onlineli | D. J.  |   |        |        |             |           |
-| brary.wil |        |   |        |        |             |           |
-| ey.com/do |        |   |        |        |             |           |
-| i/10.2307 |        |   |        |        |             |           |
-| /2656988) |        |   |        |        |             |           |
-+-----------+--------+---+--------+--------+-------------+-----------+
++-------+-------+-------+-------+-------+-------+-------+
+| t     | a     | a ñ o | re    | n     | coord | in    |
+| itulo | u     |       | g     | úmero | e     | for   |
+| ar    | tores |       | istro | reg   | nadas | m     |
+| t     | y año |       | a.    | i     |       | ación |
+| ículo |       |       | eur   | stros |       | adi   |
+|       |       |       | o     |       |       | c     |
+|       |       |       | paeum |       |       | ional |
++=======+=======+=======+=======+=======+=======+=======+
+| [Ch   | Cauja | 1 9 9 | si    | 9     | no    | no    |
+| lor   | p     | 9     |       |       |       |       |
+| o     | e-Cas |       |       |       |       |       |
+| plast | t     |       |       |       |       |       |
+| DNA   | ells, |       |       |       |       |       |
+| Re    | J., J |       |       |       |       |       |
+| str   | a     |       |       |       |       |       |
+| i     | nsen, |       |       |       |       |       |
+| ction | R.    |       |       |       |       |       |
+| Site  | K.,   |       |       |       |       |       |
+| Phy   | Pedr  |       |       |       |       |       |
+| l     | o     |       |       |       |       |       |
+| ogeny | la-Mo |       |       |       |       |       |
+| of    | n     |       |       |       |       |       |
+| the   | fort, |       |       |       |       |       |
+| Genus | J., & |       |       |       |       |       |
+| And   | Memb  |       |       |       |       |       |
+| roc   | r     |       |       |       |       |       |
+| y     | ives, |       |       |       |       |       |
+| mbium | N.    |       |       |       |       |       |
+| (C    |       |       |       |       |       |       |
+| o     |       |       |       |       |       |       |
+| lchic |       |       |       |       |       |       |
+| ace   |       |       |       |       |       |       |
+| ae    |       |       |       |       |       |       |
+| )](h% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| %%2%2 |       |       |       |       |       |       |
+| 0020t |       |       |       |       |       |       |
+| tp%20 |       |       |       |       |       |       |
+| %2%20 |       |       |       |       |       |       |
+| 0%20s |       |       |       |       |       |       |
+| ://sc |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0%20% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| i%2%2 |       |       |       |       |       |       |
+| 00-h% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| ub%20 |       |       |       |       |       |       |
+| .%20s |       |       |       |       |       |       |
+| e/%20 |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0%20% |       |       |       |       |       |       |
+| 20htt |       |       |       |       |       |       |
+| %%2%2 |       |       |       |       |       |       |
+| 0020p |       |       |       |       |       |       |
+| s:%20 |       |       |       |       |       |       |
+| //%20 |       |       |       |       |       |       |
+| w%20% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0ww.% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| j%2%2 |       |       |       |       |       |       |
+| 00sto |       |       |       |       |       |       |
+| r.%20 |       |       |       |       |       |       |
+| %2%20 |       |       |       |       |       |       |
+| 0%20% |       |       |       |       |       |       |
+| 20org |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0%20% |       |       |       |       |       |       |
+| 20/st |       |       |       |       |       |       |
+| a%2%2 |       |       |       |       |       |       |
+| 00bl% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| %2%20 |       |       |       |       |       |       |
+| 0%20e |       |       |       |       |       |       |
+| /2%20 |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0419% |       |       |       |       |       |       |
+| 20644 |       |       |       |       |       |       |
+| %%2%2 |       |       |       |       |       |       |
+| 0020% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| ?o%20 |       |       |       |       |       |       |
+| r%20% |       |       |       |       |       |       |
+| 20igi |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0n=c% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| %%2%2 |       |       |       |       |       |       |
+| 0020r |       |       |       |       |       |       |
+| os%20 |       |       |       |       |       |       |
+| %2%20 |       |       |       |       |       |       |
+| 0%20s |       |       |       |       |       |       |
+| ref#) |       |       |       |       |       |       |
++-------+-------+-------+-------+-------+-------+-------+
+| [Con  | M     | 1 9 6 | si    | 8     | no,   | si    |
+| tri   | ontse | 1     |       |       | pero  |       |
+| b     | r     |       |       |       | si l  |       |
+| ución | rat-R |       |       |       | ocali |       |
+| al    | e     |       |       |       | z     |       |
+| Con   | coder |       |       |       | ación |       |
+| oci   |       |       |       |       | apro  |       |
+| m     |       |       |       |       | x     |       |
+| iento |       |       |       |       | imada |       |
+| de    |       |       |       |       |       |       |
+| los   |       |       |       |       |       |       |
+| P     |       |       |       |       |       |       |
+| astos |       |       |       |       |       |       |
+| Al    |       |       |       |       |       |       |
+| mer   |       |       |       |       |       |       |
+| i     |       |       |       |       |       |       |
+| enses |       |       |       |       |       |       |
+| 1]    |       |       |       |       |       |       |
+| (htt% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| p%2%2 |       |       |       |       |       |       |
+| 00s:/ |       |       |       |       |       |       |
+| /c%20 |       |       |       |       |       |       |
+| %2%20 |       |       |       |       |       |       |
+| 0%20% |       |       |       |       |       |       |
+| 20ore |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0%20% |       |       |       |       |       |       |
+| 20.ac |       |       |       |       |       |       |
+| .%2%2 |       |       |       |       |       |       |
+| 00uk% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| %2%20 |       |       |       |       |       |       |
+| 0%20/ |       |       |       |       |       |       |
+| do%20 |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0wnl% |       |       |       |       |       |       |
+| 20oad |       |       |       |       |       |       |
+| %%2%2 |       |       |       |       |       |       |
+| 0020% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| /p%20 |       |       |       |       |       |       |
+| d%20% |       |       |       |       |       |       |
+| 20f/3 |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0609% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| %%2%2 |       |       |       |       |       |       |
+| 00203 |       |       |       |       |       |       |
+| 72%20 |       |       |       |       |       |       |
+| %2%20 |       |       |       |       |       |       |
+| 0%206 |       |       |       |       |       |       |
+| .pdf) |       |       |       |       |       |       |
++-------+-------+-------+-------+-------+-------+-------+
+| [Cor  | N .   | 2 0 0 | no    | 0     | no    | no    |
+| rel   | Memb  | 3     |       |       |       |       |
+| a     |       |       |       |       |       |       |
+| tions | r     |       |       |       |       |       |
+| b     | ives, |       |       |       |       |       |
+| e     | O .   |       |       |       |       |       |
+| tween | Ped   |       |       |       |       |       |
+| m     |       |       |       |       |       |       |
+| orpho | r     |       |       |       |       |       |
+| log   | ola-M |       |       |       |       |       |
+| i     |       |       |       |       |       |       |
+| cal-a | o     |       |       |       |       |       |
+| nat   | nfort |       |       |       |       |       |
+| o     |       |       |       |       |       |       |
+| mical | & J.  |       |       |       |       |       |
+| leaf  |       |       |       |       |       |       |
+| c     | Caju  |       |       |       |       |       |
+| harac |       |       |       |       |       |       |
+| ter   | a     |       |       |       |       |       |
+| i     | pé-Ca |       |       |       |       |       |
+| stics |       |       |       |       |       |       |
+| and   | s     |       |       |       |       |       |
+| envi  | tells |       |       |       |       |       |
+| ron   |       |       |       |       |       |       |
+| m     |       |       |       |       |       |       |
+| ental |       |       |       |       |       |       |
+| t     |       |       |       |       |       |       |
+| raits |       |       |       |       |       |       |
+| in    |       |       |       |       |       |       |
+| sou   |       |       |       |       |       |       |
+| t     |       |       |       |       |       |       |
+| hwest |       |       |       |       |       |       |
+| a     |       |       |       |       |       |       |
+| f     |       |       |       |       |       |       |
+| rican |       |       |       |       |       |       |
+| s     |       |       |       |       |       |       |
+| p     |       |       |       |       |       |       |
+| ecies |       |       |       |       |       |       |
+| of    |       |       |       |       |       |       |
+| And   |       |       |       |       |       |       |
+| roc   |       |       |       |       |       |       |
+| y     |       |       |       |       |       |       |
+| mbium |       |       |       |       |       |       |
+| (     |       |       |       |       |       |       |
+| Colch |       |       |       |       |       |       |
+| ica   |       |       |       |       |       |       |
+| c     |       |       |       |       |       |       |
+| eae)] |       |       |       |       |       |       |
+| (<htt |       |       |       |       |       |       |
+| p     |       |       |       |       |       |       |
+| ://w> |       |       |       |       |       |       |
+| ww.   |       |       |       |       |       |       |
+| s     |       |       |       |       |       |       |
+| tep.e |       |       |       |       |       |       |
+| s/j   |       |       |       |       |       |       |
+| a     |       |       |       |       |       |       |
+| rdcan |       |       |       |       |       |       |
+| /73   |       |       |       |       |       |       |
+| M     |       |       |       |       |       |       |
+| embri |       |       |       |       |       |       |
+| ves   |       |       |       |       |       |       |
+| ,     |       |       |       |       |       |       |
+| Pedro |       |       |       |       |       |       |
+| laM   |       |       |       |       |       |       |
+| o     |       |       |       |       |       |       |
+| nfort |       |       |       |       |       |       |
+| &Ca   |       |       |       |       |       |       |
+| u     |       |       |       |       |       |       |
+| jape- |       |       |       |       |       |       |
+| Cas   |       |       |       |       |       |       |
+| t     |       |       |       |       |       |       |
+| ells2 |       |       |       |       |       |       |
+| 003   |       |       |       |       |       |       |
+| a     |       |       |       |       |       |       |
+| .pdf) |       |       |       |       |       |       |
++-------+-------+-------+-------+-------+-------+-------+
+| [De   | Mül   | 2 0 0 | no    | 0     | no    | no    |
+| Li    | l     | 2     |       |       |       |       |
+| lii   | er-Do |       |       |       |       |       |
+| f     | b     |       |       |       |       |       |
+| loris | lies, |       |       |       |       |       |
+| Not   | U., & |       |       |       |       |       |
+| u     | Mül   |       |       |       |       |       |
+| lae7. | l     |       |       |       |       |       |
+| De d  | er-Do |       |       |       |       |       |
+| e     | b     |       |       |       |       |       |
+| curia | lies, |       |       |       |       |       |
+| a     | D.    |       |       |       |       |       |
+| ltera |       |       |       |       |       |       |
+| spe   |       |       |       |       |       |       |
+| c     |       |       |       |       |       |       |
+| ierum |       |       |       |       |       |       |
+| n     |       |       |       |       |       |       |
+| o     |       |       |       |       |       |       |
+| varum |       |       |       |       |       |       |
+| g     |       |       |       |       |       |       |
+| e     |       |       |       |       |       |       |
+| neris |       |       |       |       |       |       |
+| An    |       |       |       |       |       |       |
+| d     |       |       |       |       |       |       |
+| rocym |       |       |       |       |       |       |
+| biu   |       |       |       |       |       |       |
+| m     |       |       |       |       |       |       |
+| (Colc |       |       |       |       |       |       |
+| hic   |       |       |       |       |       |       |
+| a     |       |       |       |       |       |       |
+| ceae) |       |       |       |       |       |       |
+| in    |       |       |       |       |       |       |
+| A     |       |       |       |       |       |       |
+| frica |       |       |       |       |       |       |
+| Au    |       |       |       |       |       |       |
+| s     |       |       |       |       |       |       |
+| trali |       |       |       |       |       |       |
+| s .l] |       |       |       |       |       |       |
+| (     |       |       |       |       |       |       |
+| ht%%2 |       |       |       |       |       |       |
+| 0     |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| t     |       |       |       |       |       |       |
+| p%20s |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 20:// |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 20sci |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 20%%2 |       |       |       |       |       |       |
+| 0     |       |       |       |       |       |       |
+| 20-hu |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 2%200 |       |       |       |       |       |       |
+| b     |       |       |       |       |       |       |
+| .se/h |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 20t%2 |       |       |       |       |       |       |
+| 0     |       |       |       |       |       |       |
+| tp%20 |       |       |       |       |       |       |
+| s     |       |       |       |       |       |       |
+| :%20/ |       |       |       |       |       |       |
+| /     |       |       |       |       |       |       |
+| on%20 |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| l     |       |       |       |       |       |       |
+| in%%2 |       |       |       |       |       |       |
+| 0     |       |       |       |       |       |       |
+| 20eli |       |       |       |       |       |       |
+| b     |       |       |       |       |       |       |
+| r%20a |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 20ry. |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 20w%2 |       |       |       |       |       |       |
+| 0     |       |       |       |       |       |       |
+| iley. |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 2%200 |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 20com |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| /     |       |       |       |       |       |       |
+| doi%2 |       |       |       |       |       |       |
+| 0     |       |       |       |       |       |       |
+| /e%20 |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 2%200 |       |       |       |       |       |       |
+| p     |       |       |       |       |       |       |
+| df%20 |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 20/10 |       |       |       |       |       |       |
+| .     |       |       |       |       |       |       |
+| 10%%2 |       |       |       |       |       |       |
+| 0     |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| 0     |       |       |       |       |       |       |
+| 2%20/ |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 20fed |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 20r.2 |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 20%%2 |       |       |       |       |       |       |
+| 0     |       |       |       |       |       |       |
+| 20002 |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 2%200 |       |       |       |       |       |       |
+| 9     |       |       |       |       |       |       |
+| 0006) |       |       |       |       |       |       |
++-------+-------+-------+-------+-------+-------+-------+
+| [Des  | Cauja | 2 0 0 | si    | 9     | no,   | si    |
+| i     | p     | 4     |       |       | pobla |       |
+| gning | é-Cas |       |       |       | c     |       |
+| e     | t     |       |       |       | iones |       |
+| x     | ells, |       |       |       | por   |       |
+| -situ | J.,   |       |       |       | loc   |       |
+| con   | Pedr  |       |       |       | a     |       |
+| ser   | o     |       |       |       | lidad |       |
+| v     | la-Mo |       |       |       |       |       |
+| ation | n     |       |       |       |       |       |
+| s tra | fort, |       |       |       |       |       |
+| t     | J     |       |       |       |       |       |
+| egies |       |       |       |       |       |       |
+| t     |       |       |       |       |       |       |
+| h     |       |       |       |       |       |       |
+| rough |       |       |       |       |       |       |
+| the a |       |       |       |       |       |       |
+| sse   |       |       |       |       |       |       |
+| s     |       |       |       |       |       |       |
+| sment |       |       |       |       |       |       |
+| of n  |       |       |       |       |       |       |
+| e     |       |       |       |       |       |       |
+| utral |       |       |       |       |       |       |
+| g     |       |       |       |       |       |       |
+| e     |       |       |       |       |       |       |
+| netic |       |       |       |       |       |       |
+| ma    |       |       |       |       |       |       |
+| r     |       |       |       |       |       |       |
+| kers: |       |       |       |       |       |       |
+| Ap    |       |       |       |       |       |       |
+| pli   |       |       |       |       |       |       |
+| c     |       |       |       |       |       |       |
+| ation |       |       |       |       |       |       |
+| to    |       |       |       |       |       |       |
+| the e |       |       |       |       |       |       |
+| nda   |       |       |       |       |       |       |
+| n     |       |       |       |       |       |       |
+| gered |       |       |       |       |       |       |
+| And   |       |       |       |       |       |       |
+| roc   |       |       |       |       |       |       |
+| y     |       |       |       |       |       |       |
+| mbium |       |       |       |       |       |       |
+| g     |       |       |       |       |       |       |
+| ramin |       |       |       |       |       |       |
+| e     |       |       |       |       |       |       |
+| um](h |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0ttp% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| %%2%2 |       |       |       |       |       |       |
+| 0020s |       |       |       |       |       |       |
+| :/%20 |       |       |       |       |       |       |
+| %2%20 |       |       |       |       |       |       |
+| 0%20/ |       |       |       |       |       |       |
+| link. |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0%20% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| s%2%2 |       |       |       |       |       |       |
+| 00pr% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| in%20 |       |       |       |       |       |       |
+| g%20e |       |       |       |       |       |       |
+| r.%20 |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0%20% |       |       |       |       |       |       |
+| 20com |       |       |       |       |       |       |
+| %%2%2 |       |       |       |       |       |       |
+| 0020/ |       |       |       |       |       |       |
+| ar%20 |       |       |       |       |       |       |
+| ti%20 |       |       |       |       |       |       |
+| c%20% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0le/% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| 1%2%2 |       |       |       |       |       |       |
+| 000.1 |       |       |       |       |       |       |
+| 02%20 |       |       |       |       |       |       |
+| %2%20 |       |       |       |       |       |       |
+| 0%20% |       |       |       |       |       |       |
+| 203/B |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0%20% |       |       |       |       |       |       |
+| 20:CO |       |       |       |       |       |       |
+| G%2%2 |       |       |       |       |       |       |
+| 00E.% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| %2%20 |       |       |       |       |       |       |
+| 0%200 |       |       |       |       |       |       |
+| 00%20 |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0002% |       |       |       |       |       |       |
+| 20999 |       |       |       |       |       |       |
+| %%2%2 |       |       |       |       |       |       |
+| 0020% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| 7.%20 |       |       |       |       |       |       |
+| 5%20% |       |       |       |       |       |       |
+| 20950 |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 02.8% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| %%2%2 |       |       |       |       |       |       |
+| 00208 |       |       |       |       |       |       |
+| #c%20 |       |       |       |       |       |       |
+| %2%20 |       |       |       |       |       |       |
+| 0%20i |       |       |       |       |       |       |
+| teas) |       |       |       |       |       |       |
++-------+-------+-------+-------+-------+-------+-------+
+| [     | S     | 1 9 8 | si    | 0     | no,   | si    |
+| Flora | a     | 7     |       |       | pobla |       |
+| de Al | gredo |       |       |       | c     |       |
+| m     | A     |       |       |       | iones |       |
+| ería: | rnaiz |       |       |       | por   |       |
+| p     |       |       |       |       | loc   |       |
+| l     |       |       |       |       | a     |       |
+| antas |       |       |       |       | lidad |       |
+| v asc |       |       |       |       |       |       |
+| u     |       |       |       |       |       |       |
+| lares |       |       |       |       |       |       |
+| de la |       |       |       |       |       |       |
+| provi |       |       |       |       |       |       |
+| nci   |       |       |       |       |       |       |
+| a](   |       |       |       |       |       |       |
+| h%2%2 |       |       |       |       |       |       |
+| 00tt% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| %2%20 |       |       |       |       |       |       |
+| 0%20p |       |       |       |       |       |       |
+| s:%20 |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0//w% |       |       |       |       |       |       |
+| 20ww. |       |       |       |       |       |       |
+| %%2%2 |       |       |       |       |       |       |
+| 0020% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| di%20 |       |       |       |       |       |       |
+| p%20% |       |       |       |       |       |       |
+| 20alm |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0e.o% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| %%2%2 |       |       |       |       |       |       |
+| 0020r |       |       |       |       |       |       |
+| g/%20 |       |       |       |       |       |       |
+| %2%20 |       |       |       |       |       |       |
+| 0%20S |       |       |       |       |       |       |
+| ervic |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0%20% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| i%2%2 |       |       |       |       |       |       |
+| 00os% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| /A%20 |       |       |       |       |       |       |
+| n%20e |       |       |       |       |       |       |
+| xo%20 |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0%20% |       |       |       |       |       |       |
+| 20s/a |       |       |       |       |       |       |
+| %%2%2 |       |       |       |       |       |       |
+| 0020n |       |       |       |       |       |       |
+| ex%20 |       |       |       |       |       |       |
+| os%20 |       |       |       |       |       |       |
+| i%20% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0ea.% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| n%2%2 |       |       |       |       |       |       |
+| 00sf/ |       |       |       |       |       |       |
+| VA%20 |       |       |       |       |       |       |
+| %2%20 |       |       |       |       |       |       |
+| 0%20% |       |       |       |       |       |       |
+| 20nex |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0%20% |       |       |       |       |       |       |
+| 20os/ |       |       |       |       |       |       |
+| I%2%2 |       |       |       |       |       |       |
+| 00EA% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| %2%20 |       |       |       |       |       |       |
+| 0%20- |       |       |       |       |       |       |
+| FA%20 |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0-f-% |       |       |       |       |       |       |
+| 20c2/ |       |       |       |       |       |       |
+| %%2%2 |       |       |       |       |       |       |
+| 0020% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| $F%20 |       |       |       |       |       |       |
+| i%20% |       |       |       |       |       |       |
+| 20le/ |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0FA-% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| %%2%2 |       |       |       |       |       |       |
+| 0020f |       |       |       |       |       |       |
+| -c%20 |       |       |       |       |       |       |
+| %2%20 |       |       |       |       |       |       |
+| 0%202 |       |       |       |       |       |       |
+| .pdf) |       |       |       |       |       |       |
++-------+-------+-------+-------+-------+-------+-------+
+| [H    | Cauja | 2 0 0 | si    | 9     | no,   | si    |
+| ist   | p     | 8     |       |       | pobla |       |
+| o     | e-Cas |       |       |       | c     |       |
+| rical | t     |       |       |       | iones |       |
+| bio   | ells, |       |       |       | por   |       |
+| geo   | J., J |       |       |       | loc   |       |
+| g     | a     |       |       |       | a     |       |
+| raphy | nsen, |       |       |       | lidad |       |
+| of    | R.    |       |       |       |       |       |
+| And   | K.,   |       |       |       |       |       |
+| roc   | Memb  |       |       |       |       |       |
+| y     | r     |       |       |       |       |       |
+| mbium | ives, |       |       |       |       |       |
+| Wi    | N.,   |       |       |       |       |       |
+| lld   | Pedr  |       |       |       |       |       |
+| .     | o     |       |       |       |       |       |
+| (Colc | la-Mo |       |       |       |       |       |
+| hic   | n     |       |       |       |       |       |
+| a     | fort, |       |       |       |       |       |
+| ceae) | J.,   |       |       |       |       |       |
+| in A  | Monts |       |       |       |       |       |
+| f     | e     |       |       |       |       |       |
+| rica: | rrat, |       |       |       |       |       |
+| ev    | J.    |       |       |       |       |       |
+| i     | M., & |       |       |       |       |       |
+| dence | Ar    |       |       |       |       |       |
+| from  | d     |       |       |       |       |       |
+| cpDNA | anuy, |       |       |       |       |       |
+| RFL   | A.    |       |       |       |       |       |
+| Ps] ( |       |       |       |       |       |       |
+| h     |       |       |       |       |       |       |
+| t%20% |       |       |       |       |       |       |
+| 2     |       |       |       |       |       |       |
+| 0     |       |       |       |       |       |       |
+| tps%2 |       |       |       |       |       |       |
+| 0     |       |       |       |       |       |       |
+| :     |       |       |       |       |       |       |
+| //aca |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 2     |       |       |       |       |       |       |
+| 0%20d |       |       |       |       |       |       |
+| e     |       |       |       |       |       |       |
+| m     |       |       |       |       |       |       |
+| %20ic |       |       |       |       |       |       |
+| .     |       |       |       |       |       |       |
+| o     |       |       |       |       |       |       |
+| up%20 |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 2     |       |       |       |       |       |       |
+| 0.co% |       |       |       |       |       |       |
+| 2     |       |       |       |       |       |       |
+| 0     |       |       |       |       |       |       |
+| m/bot |       |       |       |       |       |       |
+| l     |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| i     |       |       |       |       |       |       |
+| n     |       |       |       |       |       |       |
+| n%20e |       |       |       |       |       |       |
+| a     |       |       |       |       |       |       |
+| n     |       |       |       |       |       |       |
+| /ar%2 |       |       |       |       |       |       |
+| 0     |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 20tic |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 2     |       |       |       |       |       |       |
+| 0le/1 |       |       |       |       |       |       |
+| 3     |       |       |       |       |       |       |
+| 6     |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0     |       |       |       |       |       |       |
+| /     |       |       |       |       |       |       |
+| 4/%20 |       |       |       |       |       |       |
+| 3     |       |       |       |       |       |       |
+| 7     |       |       |       |       |       |       |
+| 9/25% |       |       |       |       |       |       |
+| 2     |       |       |       |       |       |       |
+| 0     |       |       |       |       |       |       |
+| %2057 |       |       |       |       |       |       |
+| 1     |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 2088? |       |       |       |       |       |       |
+| l     |       |       |       |       |       |       |
+| o     |       |       |       |       |       |       |
+| g%20% |       |       |       |       |       |       |
+| 2     |       |       |       |       |       |       |
+| 0     |       |       |       |       |       |       |
+| in=%2 |       |       |       |       |       |       |
+| 0     |       |       |       |       |       |       |
+| f     |       |       |       |       |       |       |
+| alse) |       |       |       |       |       |       |
++-------+-------+-------+-------+-------+-------+-------+
+| [M    | Del   | 2 0 0 | si    | 9     | no,   | si    |
+| i     | Hoyo, | 6     |       |       | pobla |       |
+| ssing | A.,   |       |       |       | c     |       |
+| Links | Pedr  |       |       |       | iones |       |
+| B     | o     |       |       |       | por   |       |
+| e     | la-Mo |       |       |       | loc   |       |
+| tween | n     |       |       |       | a     |       |
+| Di    | fort, |       |       |       | lidad |       |
+| s     | J.    |       |       |       |       |       |
+| junct |       |       |       |       |       |       |
+| Po    |       |       |       |       |       |       |
+| pul   |       |       |       |       |       |       |
+| a     |       |       |       |       |       |       |
+| tions |       |       |       |       |       |       |
+| of    |       |       |       |       |       |       |
+| And   |       |       |       |       |       |       |
+| roc   |       |       |       |       |       |       |
+| y     |       |       |       |       |       |       |
+| mbium |       |       |       |       |       |       |
+| (Colc |       |       |       |       |       |       |
+| hic   |       |       |       |       |       |       |
+| a     |       |       |       |       |       |       |
+| ceae) |       |       |       |       |       |       |
+| in    |       |       |       |       |       |       |
+| A     |       |       |       |       |       |       |
+| frica |       |       |       |       |       |       |
+| Using |       |       |       |       |       |       |
+| Ch    |       |       |       |       |       |       |
+| lor   |       |       |       |       |       |       |
+| o     |       |       |       |       |       |       |
+| plast |       |       |       |       |       |       |
+| DNA   |       |       |       |       |       |       |
+| Non   |       |       |       |       |       |       |
+| c     |       |       |       |       |       |       |
+| oding |       |       |       |       |       |       |
+| Se    |       |       |       |       |       |       |
+| q     |       |       |       |       |       |       |
+| uence |       |       |       |       |       |       |
+| s](   |       |       |       |       |       |       |
+| ht%20 |       |       |       |       |       |       |
+| t%20% |       |       |       |       |       |       |
+| 20ps: |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0//s% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| %%2%2 |       |       |       |       |       |       |
+| 0020c |       |       |       |       |       |       |
+| ho%20 |       |       |       |       |       |       |
+| %2%20 |       |       |       |       |       |       |
+| 0%20l |       |       |       |       |       |       |
+| arshi |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0%20% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| p%2%2 |       |       |       |       |       |       |
+| 00.c% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| la%20 |       |       |       |       |       |       |
+| r%20e |       |       |       |       |       |       |
+| mo%20 |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0%20% |       |       |       |       |       |       |
+| 20nt. |       |       |       |       |       |       |
+| %%2%2 |       |       |       |       |       |       |
+| 0020e |       |       |       |       |       |       |
+| du%20 |       |       |       |       |       |       |
+| /c%20 |       |       |       |       |       |       |
+| g%20% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0i/v% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| i%2%2 |       |       |       |       |       |       |
+| 00ewc |       |       |       |       |       |       |
+| on%20 |       |       |       |       |       |       |
+| %2%20 |       |       |       |       |       |       |
+| 0%20% |       |       |       |       |       |       |
+| 20ten |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0%20% |       |       |       |       |       |       |
+| 20t.c |       |       |       |       |       |       |
+| g%2%2 |       |       |       |       |       |       |
+| 00i?% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| %2%20 |       |       |       |       |       |       |
+| 0%20a |       |       |       |       |       |       |
+| rt%20 |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0icl% |       |       |       |       |       |       |
+| 20e=1 |       |       |       |       |       |       |
+| %%2%2 |       |       |       |       |       |       |
+| 0020% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| 59%20 |       |       |       |       |       |       |
+| 8%20% |       |       |       |       |       |       |
+| 20&co |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0nte% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| %%2%2 |       |       |       |       |       |       |
+| 0020x |       |       |       |       |       |       |
+| t=%20 |       |       |       |       |       |       |
+| %2%20 |       |       |       |       |       |       |
+| 0%20a |       |       |       |       |       |       |
+| liso) |       |       |       |       |       |       |
++-------+-------+-------+-------+-------+-------+-------+
+| [ All | J .   | 1 9 9 | si    | 10    | no,   | no    |
+| o     | Ped   | 4     |       |       | pobla |       |
+| zymic |       |       |       |       | c     |       |
+| and   | r     |       |       |       | iones |       |
+| morp  | ola-M |       |       |       | por   |       |
+| hol   |       |       |       |       | loc   |       |
+| o     | o     |       |       |       | a     |       |
+| gical | nfort |       |       |       | lidad |       |
+| rela  |       |       |       |       |       |       |
+| tio   | & J.  |       |       |       |       |       |
+| n     |       |       |       |       |       |       |
+| ships | Caju  |       |       |       |       |       |
+| among |       |       |       |       |       |       |
+| And   | a     |       |       |       |       |       |
+| roc   | pé-Ca |       |       |       |       |       |
+| y     |       |       |       |       |       |       |
+| mbium | s     |       |       |       |       |       |
+| g ram | tells |       |       |       |       |       |
+| i     |       |       |       |       |       |       |
+| neum, |       |       |       |       |       |       |
+| A. e  |       |       |       |       |       |       |
+| uro   |       |       |       |       |       |       |
+| p     |       |       |       |       |       |       |
+| aeum, |       |       |       |       |       |       |
+| and   |       |       |       |       |       |       |
+| A.    |       |       |       |       |       |       |
+| psa   |       |       |       |       |       |       |
+| mmo   |       |       |       |       |       |       |
+| p     |       |       |       |       |       |       |
+| hilum |       |       |       |       |       |       |
+| (     |       |       |       |       |       |       |
+| Colch |       |       |       |       |       |       |
+| ica   |       |       |       |       |       |       |
+| c     |       |       |       |       |       |       |
+| eae)] |       |       |       |       |       |       |
+| (<htt |       |       |       |       |       |       |
+| p     |       |       |       |       |       |       |
+| s://> |       |       |       |       |       |       |
+| lin   |       |       |       |       |       |       |
+| k     |       |       |       |       |       |       |
+| .spri |       |       |       |       |       |       |
+| nge   |       |       |       |       |       |       |
+| r     |       |       |       |       |       |       |
+| .com/ |       |       |       |       |       |       |
+| art   |       |       |       |       |       |       |
+| i     |       |       |       |       |       |       |
+| cle/1 |       |       |       |       |       |       |
+| 0.1   |       |       |       |       |       |       |
+| 0     |       |       |       |       |       |       |
+| 07/BF |       |       |       |       |       |       |
+| 009   |       |       |       |       |       |       |
+| 8     |       |       |       |       |       |       |
+| 5346) |       |       |       |       |       |       |
++-------+-------+-------+-------+-------+-------+-------+
+| [G    | J .   | 1 9 9 | si    | 10    | no,   | no    |
+| e     | Ped   | 6     |       |       | pobla |       |
+| netic |       |       |       |       | c     |       |
+| and   | r     |       |       |       | iones |       |
+| morp  | ola-M |       |       |       | por   |       |
+| hol   |       |       |       |       | loc   |       |
+| o     | o     |       |       |       | a     |       |
+| gical | nfort |       |       |       | lidad |       |
+| d ive |       |       |       |       |       |       |
+| r     | & J.  |       |       |       |       |       |
+| gence |       |       |       |       |       |       |
+| in    | Caju  |       |       |       |       |       |
+| the   |       |       |       |       |       |       |
+| And   | a     |       |       |       |       |       |
+| roc   | pé-Ca |       |       |       |       |       |
+| y     |       |       |       |       |       |       |
+| mbium | s     |       |       |       |       |       |
+| gra   | tells |       |       |       |       |       |
+| m     |       |       |       |       |       |       |
+| ineum |       |       |       |       |       |       |
+| c     |       |       |       |       |       |       |
+| o     |       |       |       |       |       |       |
+| mplex |       |       |       |       |       |       |
+| (     |       |       |       |       |       |       |
+| Colch |       |       |       |       |       |       |
+| ica   |       |       |       |       |       |       |
+| c     |       |       |       |       |       |       |
+| eae)] |       |       |       |       |       |       |
+| (<htt |       |       |       |       |       |       |
+| p     |       |       |       |       |       |       |
+| s://> |       |       |       |       |       |       |
+| lin   |       |       |       |       |       |       |
+| k     |       |       |       |       |       |       |
+| .spri |       |       |       |       |       |       |
+| nge   |       |       |       |       |       |       |
+| r     |       |       |       |       |       |       |
+| .com/ |       |       |       |       |       |       |
+| art   |       |       |       |       |       |       |
+| i     |       |       |       |       |       |       |
+| cle/1 |       |       |       |       |       |       |
+| 0.1   |       |       |       |       |       |       |
+| 0     |       |       |       |       |       |       |
+| 07/BF |       |       |       |       |       |       |
+| 009   |       |       |       |       |       |       |
+| 8     |       |       |       |       |       |       |
+| 9058) |       |       |       |       |       |       |
++-------+-------+-------+-------+-------+-------+-------+
+| [The  | Cauja | 2 0 0 |       |       |       |       |
+| inf   | p     | 3     |       |       |       |       |
+| l     | é-Cas |       |       |       |       |       |
+| uence | t     |       |       |       |       |       |
+| of    | ells, |       |       |       |       |       |
+| the M | J.    |       |       |       |       |       |
+| i     | and J |       |       |       |       |       |
+| ocene | a     |       |       |       |       |       |
+| Medi  | nsen, |       |       |       |       |       |
+| ter   | R.K   |       |       |       |       |       |
+| r     |       |       |       |       |       |       |
+| anean |       |       |       |       |       |       |
+| de    |       |       |       |       |       |       |
+| sic   |       |       |       |       |       |       |
+| c     |       |       |       |       |       |       |
+| ation |       |       |       |       |       |       |
+| on    |       |       |       |       |       |       |
+| the   |       |       |       |       |       |       |
+| geo   |       |       |       |       |       |       |
+| gra   |       |       |       |       |       |       |
+| p     |       |       |       |       |       |       |
+| hical |       |       |       |       |       |       |
+| exp   |       |       |       |       |       |       |
+| a     |       |       |       |       |       |       |
+| nsion |       |       |       |       |       |       |
+| and g |       |       |       |       |       |       |
+| e     |       |       |       |       |       |       |
+| netic |       |       |       |       |       |       |
+| var   |       |       |       |       |       |       |
+| i     |       |       |       |       |       |       |
+| ation |       |       |       |       |       |       |
+| of    |       |       |       |       |       |       |
+| And   |       |       |       |       |       |       |
+| roc   |       |       |       |       |       |       |
+| y     |       |       |       |       |       |       |
+| mbium |       |       |       |       |       |       |
+| gra   |       |       |       |       |       |       |
+| m     |       |       |       |       |       |       |
+| ineum |       |       |       |       |       |       |
+| (     |       |       |       |       |       |       |
+| Cav.) |       |       |       |       |       |       |
+| M     |       |       |       |       |       |       |
+| c     |       |       |       |       |       |       |
+| Bride |       |       |       |       |       |       |
+| (C    |       |       |       |       |       |       |
+| o     |       |       |       |       |       |       |
+| lchic |       |       |       |       |       |       |
+| ace   |       |       |       |       |       |       |
+| ae    |       |       |       |       |       |       |
+| )](h% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| %%2%2 |       |       |       |       |       |       |
+| 0020t |       |       |       |       |       |       |
+| tp%20 |       |       |       |       |       |       |
+| %2%20 |       |       |       |       |       |       |
+| 0%20s |       |       |       |       |       |       |
+| ://on |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0%20% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| l%2%2 |       |       |       |       |       |       |
+| 00in% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| el%20 |       |       |       |       |       |       |
+| i%20b |       |       |       |       |       |       |
+| ra%20 |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0%20% |       |       |       |       |       |       |
+| 20ry. |       |       |       |       |       |       |
+| %%2%2 |       |       |       |       |       |       |
+| 0020w |       |       |       |       |       |       |
+| il%20 |       |       |       |       |       |       |
+| ey%20 |       |       |       |       |       |       |
+| .%20% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0com% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| /%2%2 |       |       |       |       |       |       |
+| 00doi |       |       |       |       |       |       |
+| /a%20 |       |       |       |       |       |       |
+| %2%20 |       |       |       |       |       |       |
+| 0%20% |       |       |       |       |       |       |
+| 20bs/ |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0%20% |       |       |       |       |       |       |
+| 2010. |       |       |       |       |       |       |
+| 1%2%2 |       |       |       |       |       |       |
+| 0004% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| %2%20 |       |       |       |       |       |       |
+| 0%206 |       |       |       |       |       |       |
+| /j%20 |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0.13% |       |       |       |       |       |       |
+| 2065- |       |       |       |       |       |       |
+| %%2%2 |       |       |       |       |       |       |
+| 0020% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| 29%20 |       |       |       |       |       |       |
+| 4%20% |       |       |       |       |       |       |
+| 20X.2 |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0003% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| %%2%2 |       |       |       |       |       |       |
+| 0020. |       |       |       |       |       |       |
+| 01%20 |       |       |       |       |       |       |
+| %2%20 |       |       |       |       |       |       |
+| 0%208 |       |       |       |       |       |       |
+| 39.x) |       |       |       |       |       |       |
++-------+-------+-------+-------+-------+-------+-------+
+| [Spa  | J .   | 1 9 9 | si    | 1     | no,   | no    |
+| ce-   | Ped   | 6     |       |       | pob   |       |
+| -     |       |       |       |       | l     |       |
+| -time | r     |       |       |       | ación |       |
+| pa    | ola-M |       |       |       | por   |       |
+| t     |       |       |       |       | loc   |       |
+| terns | o     |       |       |       | a     |       |
+| of g  | nfort |       |       |       | lidad |       |
+| e     |       |       |       |       |       |       |
+| netic | & J.  |       |       |       |       |       |
+| s     |       |       |       |       |       |       |
+| truct | Caju  |       |       |       |       |       |
+| ure   |       |       |       |       |       |       |
+| w     | a     |       |       |       |       |       |
+| ithin | pé-Ca |       |       |       |       |       |
+| a     |       |       |       |       |       |       |
+| stand | s     |       |       |       |       |       |
+| of    | tells |       |       |       |       |       |
+| And   |       |       |       |       |       |       |
+| roc   |       |       |       |       |       |       |
+| y     |       |       |       |       |       |       |
+| mbium |       |       |       |       |       |       |
+| gra   |       |       |       |       |       |       |
+| m     |       |       |       |       |       |       |
+| ineum |       |       |       |       |       |       |
+| (     |       |       |       |       |       |       |
+| Cay.) |       |       |       |       |       |       |
+| M     |       |       |       |       |       |       |
+| c     |       |       |       |       |       |       |
+| Bride |       |       |       |       |       |       |
+| (Colc |       |       |       |       |       |       |
+| h     |       |       |       |       |       |       |
+| icace |       |       |       |       |       |       |
+| ae    |       |       |       |       |       |       |
+| )](h% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| t%2%2 |       |       |       |       |       |       |
+| 00tps |       |       |       |       |       |       |
+| :/%20 |       |       |       |       |       |       |
+| %2%20 |       |       |       |       |       |       |
+| 0%20% |       |       |       |       |       |       |
+| 20/ww |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0%20% |       |       |       |       |       |       |
+| 20w.n |       |       |       |       |       |       |
+| a%2%2 |       |       |       |       |       |       |
+| 00tu% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| %2%20 |       |       |       |       |       |       |
+| 0%20r |       |       |       |       |       |       |
+| e.%20 |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0com% |       |       |       |       |       |       |
+| 20/ar |       |       |       |       |       |       |
+| %%2%2 |       |       |       |       |       |       |
+| 0020% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| ti%20 |       |       |       |       |       |       |
+| c%20% |       |       |       |       |       |       |
+| 20les |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0/hd% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| %%2%2 |       |       |       |       |       |       |
+| 0020y |       |       |       |       |       |       |
+| 19%20 |       |       |       |       |       |       |
+| %2%20 |       |       |       |       |       |       |
+| 0%209 |       |       |       |       |       |       |
+| 7166) |       |       |       |       |       |       |
++-------+-------+-------+-------+-------+-------+-------+
+| [O    | Elli  | 2 0 0 | no    | 0     | no    | no    |
+| ccu   | n     | 3     |       |       |       |       |
+| r     | gton, |       |       |       |       |       |
+| rence | E.,   |       |       |       |       |       |
+| of c  | Ba    |       |       |       |       |       |
+| olc   | s     |       |       |       |       |       |
+| h     | tida, |       |       |       |       |       |
+| icine | J.,   |       |       |       |       |       |
+| de    | Vila  |       |       |       |       |       |
+| riv   | d     |       |       |       |       |       |
+| a     | omat, |       |       |       |       |       |
+| tives | F.,   |       |       |       |       |       |
+| in    | Si    |       |       |       |       |       |
+| p     | m     |       |       |       |       |       |
+| lants | anek, |       |       |       |       |       |
+| of    | V., & |       |       |       |       |       |
+| the   | C     |       |       |       |       |       |
+| genus | o     |       |       |       |       |       |
+| And   | dina, |       |       |       |       |       |
+| r     | C.    |       |       |       |       |       |
+| ocymb |       |       |       |       |       |       |
+| ium]( |       |       |       |       |       |       |
+| h%20% |       |       |       |       |       |       |
+| 20ttp |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0s:/% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| %%2%2 |       |       |       |       |       |       |
+| 0020/ |       |       |       |       |       |       |
+| ww%20 |       |       |       |       |       |       |
+| %2%20 |       |       |       |       |       |       |
+| 0%20w |       |       |       |       |       |       |
+| .scie |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0%20% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| n%2%2 |       |       |       |       |       |       |
+| 00ce% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| di%20 |       |       |       |       |       |       |
+| r%20e |       |       |       |       |       |       |
+| ct%20 |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0%20% |       |       |       |       |       |       |
+| 20.co |       |       |       |       |       |       |
+| %%2%2 |       |       |       |       |       |       |
+| 0020m |       |       |       |       |       |       |
+| /s%20 |       |       |       |       |       |       |
+| ci%20 |       |       |       |       |       |       |
+| e%20% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0nce% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| /%2%2 |       |       |       |       |       |       |
+| 00art |       |       |       |       |       |       |
+| ic%20 |       |       |       |       |       |       |
+| %2%20 |       |       |       |       |       |       |
+| 0%20% |       |       |       |       |       |       |
+| 20le/ |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0%20% |       |       |       |       |       |       |
+| 20pii |       |       |       |       |       |       |
+| /%2%2 |       |       |       |       |       |       |
+| 00S0% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| %2%20 |       |       |       |       |       |       |
+| 0%203 |       |       |       |       |       |       |
+| 05%20 |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0197% |       |       |       |       |       |       |
+| 20802 |       |       |       |       |       |       |
+| %%2%2 |       |       |       |       |       |       |
+| 0020% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| 00%20 |       |       |       |       |       |       |
+| 2%20% |       |       |       |       |       |       |
+| 2048X |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0?vi% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| %%2%2 |       |       |       |       |       |       |
+| 0020a |       |       |       |       |       |       |
+| %3%20 |       |       |       |       |       |       |
+| %2%20 |       |       |       |       |       |       |
+| 0%20D |       |       |       |       |       |       |
+| ihub) |       |       |       |       |       |       |
++-------+-------+-------+-------+-------+-------+-------+
+| [P    | M     | 1 9 9 |       |       |       |       |
+| ollen | a     | 3     |       |       |       |       |
+| m orp | rtin, |       |       |       |       |       |
+| h     | J.,   |       |       |       |       |       |
+| ology | Pedr  |       |       |       |       |       |
+| and   | o     |       |       |       |       |       |
+| bi    | la-Mo |       |       |       |       |       |
+| o     | n     |       |       |       |       |       |
+| metry | fort, |       |       |       |       |       |
+| in    | J.,   |       |       |       |       |       |
+| And   | Ca    |       |       |       |       |       |
+| roc   | u     |       |       |       |       |       |
+| y     | japé, |       |       |       |       |       |
+| mbium | J.    |       |       |       |       |       |
+| (C    |       |       |       |       |       |       |
+| o     |       |       |       |       |       |       |
+| lchic |       |       |       |       |       |       |
+| ace   |       |       |       |       |       |       |
+| ae)]( |       |       |       |       |       |       |
+| h%20% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0ttp% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| s%2%2 |       |       |       |       |       |       |
+| 00:// |       |       |       |       |       |       |
+| cd%20 |       |       |       |       |       |       |
+| %2%20 |       |       |       |       |       |       |
+| 0%20% |       |       |       |       |       |       |
+| 20nsc |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0%20% |       |       |       |       |       |       |
+| 20ien |       |       |       |       |       |       |
+| c%2%2 |       |       |       |       |       |       |
+| 00ep% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| %2%20 |       |       |       |       |       |       |
+| 0%20u |       |       |       |       |       |       |
+| b.%20 |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0com% |       |       |       |       |       |       |
+| 20/do |       |       |       |       |       |       |
+| %%2%2 |       |       |       |       |       |       |
+| 0020% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| i/%20 |       |       |       |       |       |       |
+| 1%20% |       |       |       |       |       |       |
+| 200.1 |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0139% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| %%2%2 |       |       |       |       |       |       |
+| 0020/ |       |       |       |       |       |       |
+| b9%20 |       |       |       |       |       |       |
+| %2%20 |       |       |       |       |       |       |
+| 0%203 |       |       |       |       |       |       |
+| -163) |       |       |       |       |       |       |
++-------+-------+-------+-------+-------+-------+-------+
+| [Kar  | Ma    | 1 9 9 |       |       |       |       |
+| yol   | r     | 9     |       |       |       |       |
+| o     | gelí, |       |       |       |       |       |
+| gical | M.,   |       |       |       |       |       |
+| S     | Pedr  |       |       |       |       |       |
+| t     | o     |       |       |       |       |       |
+| udies | la-Mo |       |       |       |       |       |
+| in    | n     |       |       |       |       |       |
+| the   | fort, |       |       |       |       |       |
+| Genus | J., V |       |       |       |       |       |
+| And   | a     |       |       |       |       |       |
+| roc   | llés, |       |       |       |       |       |
+| y     | J.    |       |       |       |       |       |
+| mbium |       |       |       |       |       |       |
+| (C    |       |       |       |       |       |       |
+| olc   |       |       |       |       |       |       |
+| h     |       |       |       |       |       |       |
+| icace |       |       |       |       |       |       |
+| ae)]  |       |       |       |       |       |       |
+| (     |       |       |       |       |       |       |
+| h     |       |       |       |       |       |       |
+| ttp%2 |       |       |       |       |       |       |
+| 0     |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 20s:/ |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 2     |       |       |       |       |       |       |
+| 0/www |       |       |       |       |       |       |
+| .     |       |       |       |       |       |       |
+| p     |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0     |       |       |       |       |       |       |
+| u     |       |       |       |       |       |       |
+| bl%20 |       |       |       |       |       |       |
+| i     |       |       |       |       |       |       |
+| s     |       |       |       |       |       |       |
+| h.cs% |       |       |       |       |       |       |
+| 2     |       |       |       |       |       |       |
+| 0     |       |       |       |       |       |       |
+| %20ir |       |       |       |       |       |       |
+| o     |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 20.au |       |       |       |       |       |       |
+| /     |       |       |       |       |       |       |
+| b     |       |       |       |       |       |       |
+| t%20% |       |       |       |       |       |       |
+| 2     |       |       |       |       |       |       |
+| 0     |       |       |       |       |       |       |
+| /BT%2 |       |       |       |       |       |       |
+| 0     |       |       |       |       |       |       |
+| 9     |       |       |       |       |       |       |
+| 7006) |       |       |       |       |       |       |
++-------+-------+-------+-------+-------+-------+-------+
+| [Co   | Cauja | 1 9 9 | no    | 0     | no    | no    |
+| ntr   | p     | 9     |       |       |       |       |
+| a     | é-Cas |       |       |       |       |       |
+| sting | t     |       |       |       |       |       |
+| pa    | ells, |       |       |       |       |       |
+| t     | J.,   |       |       |       |       |       |
+| terns | Pedr  |       |       |       |       |       |
+| of g  | o     |       |       |       |       |       |
+| e     | la-Mo |       |       |       |       |       |
+| netic | n     |       |       |       |       |       |
+| str   | fort, |       |       |       |       |       |
+| u     | J.,   |       |       |       |       |       |
+| cture | Memb  |       |       |       |       |       |
+| in    | r     |       |       |       |       |       |
+| the   | ives, |       |       |       |       |       |
+| South | N.    |       |       |       |       |       |
+| A     |       |       |       |       |       |       |
+| f     |       |       |       |       |       |       |
+| rican |       |       |       |       |       |       |
+| s     |       |       |       |       |       |       |
+| p     |       |       |       |       |       |       |
+| ecies |       |       |       |       |       |       |
+| And   |       |       |       |       |       |       |
+| roc   |       |       |       |       |       |       |
+| y     |       |       |       |       |       |       |
+| mbium |       |       |       |       |       |       |
+| b     |       |       |       |       |       |       |
+| e     |       |       |       |       |       |       |
+| llum, |       |       |       |       |       |       |
+| A. gu |       |       |       |       |       |       |
+| t     |       |       |       |       |       |       |
+| tatum |       |       |       |       |       |       |
+| and   |       |       |       |       |       |       |
+| A. pu |       |       |       |       |       |       |
+| l     |       |       |       |       |       |       |
+| chrum |       |       |       |       |       |       |
+| (Colc |       |       |       |       |       |       |
+| h     |       |       |       |       |       |       |
+| icace |       |       |       |       |       |       |
+| ae)]( |       |       |       |       |       |       |
+| h%20% |       |       |       |       |       |       |
+| 20ttp |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0s:/% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| %%2%2 |       |       |       |       |       |       |
+| 0020/ |       |       |       |       |       |       |
+| ww%20 |       |       |       |       |       |       |
+| %2%20 |       |       |       |       |       |       |
+| 0%20w |       |       |       |       |       |       |
+| .scie |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0%20% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| n%2%2 |       |       |       |       |       |       |
+| 00ce% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| di%20 |       |       |       |       |       |       |
+| r%20e |       |       |       |       |       |       |
+| ct%20 |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0%20% |       |       |       |       |       |       |
+| 20.co |       |       |       |       |       |       |
+| %%2%2 |       |       |       |       |       |       |
+| 0020m |       |       |       |       |       |       |
+| /s%20 |       |       |       |       |       |       |
+| ci%20 |       |       |       |       |       |       |
+| e%20% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0nce% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| /%2%2 |       |       |       |       |       |       |
+| 00art |       |       |       |       |       |       |
+| ic%20 |       |       |       |       |       |       |
+| %2%20 |       |       |       |       |       |       |
+| 0%20% |       |       |       |       |       |       |
+| 20le/ |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0%20% |       |       |       |       |       |       |
+| 20pii |       |       |       |       |       |       |
+| /%2%2 |       |       |       |       |       |       |
+| 00S0% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| %2%20 |       |       |       |       |       |       |
+| 0%203 |       |       |       |       |       |       |
+| 05%20 |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0197% |       |       |       |       |       |       |
+| 20898 |       |       |       |       |       |       |
+| %%2%2 |       |       |       |       |       |       |
+| 0020% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| 00%20 |       |       |       |       |       |       |
+| 1%20% |       |       |       |       |       |       |
+| 20306 |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0?vi% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| %%2%2 |       |       |       |       |       |       |
+| 0020a |       |       |       |       |       |       |
+| %3%20 |       |       |       |       |       |       |
+| %2%20 |       |       |       |       |       |       |
+| 0%20D |       |       |       |       |       |       |
+| ihub) |       |       |       |       |       |       |
++-------+-------+-------+-------+-------+-------+-------+
+| [Re   | Memb  | 2 0 0 | no    | 0     | no    | no    |
+| l     | r     | 1     |       |       |       |       |
+| ative | ives, |       |       |       |       |       |
+| inf   | N     |       |       |       |       |       |
+| l     | .Pedr |       |       |       |       |       |
+| uence | o     |       |       |       |       |       |
+| of b  | la-Mo |       |       |       |       |       |
+| iol   | n     |       |       |       |       |       |
+| o     | fort, |       |       |       |       |       |
+| gical | J.,   |       |       |       |       |       |
+| v     | Cauja |       |       |       |       |       |
+| ersus | p     |       |       |       |       |       |
+| h ist | é-Cas |       |       |       |       |       |
+| o     | t     |       |       |       |       |       |
+| rical | ells, |       |       |       |       |       |
+| f     | J.    |       |       |       |       |       |
+| a     |       |       |       |       |       |       |
+| ctors |       |       |       |       |       |       |
+| on i  |       |       |       |       |       |       |
+| s     |       |       |       |       |       |       |
+| ozyme |       |       |       |       |       |       |
+| var   |       |       |       |       |       |       |
+| i     |       |       |       |       |       |       |
+| ation |       |       |       |       |       |       |
+| of    |       |       |       |       |       |       |
+| the   |       |       |       |       |       |       |
+| genus |       |       |       |       |       |       |
+| And   |       |       |       |       |       |       |
+| roc   |       |       |       |       |       |       |
+| y     |       |       |       |       |       |       |
+| mbium |       |       |       |       |       |       |
+| (Colc |       |       |       |       |       |       |
+| hic   |       |       |       |       |       |       |
+| a     |       |       |       |       |       |       |
+| ceae) |       |       |       |       |       |       |
+| in A  |       |       |       |       |       |       |
+| fri   |       |       |       |       |       |       |
+| ca]   |       |       |       |       |       |       |
+| (     |       |       |       |       |       |       |
+| ht%20 |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| t     |       |       |       |       |       |       |
+| ps%%2 |       |       |       |       |       |       |
+| 0     |       |       |       |       |       |       |
+| 20:// |       |       |       |       |       |       |
+| l     |       |       |       |       |       |       |
+| i%20n |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 20k.s |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 20p%2 |       |       |       |       |       |       |
+| 0     |       |       |       |       |       |       |
+| ringe |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 2%200 |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 20r.c |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| o     |       |       |       |       |       |       |
+| m/a%2 |       |       |       |       |       |       |
+| 0     |       |       |       |       |       |       |
+| rt%20 |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 2%200 |       |       |       |       |       |       |
+| i     |       |       |       |       |       |       |
+| cl%20 |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 20e/1 |       |       |       |       |       |       |
+| 0     |       |       |       |       |       |       |
+| .1%%2 |       |       |       |       |       |       |
+| 0     |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| 0     |       |       |       |       |       |       |
+| 0%207 |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 20/s0 |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 20060 |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 20%%2 |       |       |       |       |       |       |
+| 0     |       |       |       |       |       |       |
+| 20601 |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 2%200 |       |       |       |       |       |       |
+| 7     |       |       |       |       |       |       |
+| 0013) |       |       |       |       |       |       |
++-------+-------+-------+-------+-------+-------+-------+
+| [All  | M     | 2 0 0 | no    | 0     | no    | no    |
+| o     | a     | 8     |       |       |       |       |
+| zymic | teu-A |       |       |       |       |       |
+| var   | n     |       |       |       |       |       |
+| i     | drés, |       |       |       |       |       |
+| ation | I.    |       |       |       |       |       |
+| and d |       |       |       |       |       |       |
+| ive   |       |       |       |       |       |       |
+| r     |       |       |       |       |       |       |
+| gence |       |       |       |       |       |       |
+| in    |       |       |       |       |       |       |
+| thr   |       |       |       |       |       |       |
+| ees   |       |       |       |       |       |       |
+| p     |       |       |       |       |       |       |
+| ecies |       |       |       |       |       |       |
+| of    |       |       |       |       |       |       |
+| Ant   |       |       |       |       |       |       |
+| irr   |       |       |       |       |       |       |
+| h     |       |       |       |       |       |       |
+| inurn |       |       |       |       |       |       |
+| L. (S |       |       |       |       |       |       |
+| c     |       |       |       |       |       |       |
+| rophu |       |       |       |       |       |       |
+| lar   |       |       |       |       |       |       |
+| i     |       |       |       |       |       |       |
+| aceae |       |       |       |       |       |       |
+| -An   |       |       |       |       |       |       |
+| t     |       |       |       |       |       |       |
+| irrhi |       |       |       |       |       |       |
+| nea   |       |       |       |       |       |       |
+| e)] ( |       |       |       |       |       |       |
+| h     |       |       |       |       |       |       |
+| t%20% |       |       |       |       |       |       |
+| 2     |       |       |       |       |       |       |
+| 0     |       |       |       |       |       |       |
+| tps%2 |       |       |       |       |       |       |
+| 0     |       |       |       |       |       |       |
+| :     |       |       |       |       |       |       |
+| //aca |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 2     |       |       |       |       |       |       |
+| 0%20d |       |       |       |       |       |       |
+| e     |       |       |       |       |       |       |
+| m     |       |       |       |       |       |       |
+| %20ic |       |       |       |       |       |       |
+| .     |       |       |       |       |       |       |
+| o     |       |       |       |       |       |       |
+| up%20 |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 2     |       |       |       |       |       |       |
+| 0.co% |       |       |       |       |       |       |
+| 2     |       |       |       |       |       |       |
+| 0     |       |       |       |       |       |       |
+| m/bot |       |       |       |       |       |       |
+| l     |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| i     |       |       |       |       |       |       |
+| n     |       |       |       |       |       |       |
+| n%20e |       |       |       |       |       |       |
+| a     |       |       |       |       |       |       |
+| n     |       |       |       |       |       |       |
+| /ar%2 |       |       |       |       |       |       |
+| 0     |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 20tic |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 2     |       |       |       |       |       |       |
+| 0le/1 |       |       |       |       |       |       |
+| 3     |       |       |       |       |       |       |
+| 1     |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0     |       |       |       |       |       |       |
+| /     |       |       |       |       |       |       |
+| 2/%20 |       |       |       |       |       |       |
+| 1     |       |       |       |       |       |       |
+| 8     |       |       |       |       |       |       |
+| 7/25% |       |       |       |       |       |       |
+| 2     |       |       |       |       |       |       |
+| 0     |       |       |       |       |       |       |
+| %2067 |       |       |       |       |       |       |
+| 1     |       |       |       |       |       |       |
+| %     |       |       |       |       |       |       |
+| 2028? |       |       |       |       |       |       |
+| l     |       |       |       |       |       |       |
+| o     |       |       |       |       |       |       |
+| g%20% |       |       |       |       |       |       |
+| 2     |       |       |       |       |       |       |
+| 0     |       |       |       |       |       |       |
+| in=%2 |       |       |       |       |       |       |
+| 0     |       |       |       |       |       |       |
+| f     |       |       |       |       |       |       |
+| alse) |       |       |       |       |       |       |
++-------+-------+-------+-------+-------+-------+-------+
+| [     | Franc | 2 0 0 | no    | 0     | no    | no    |
+| Plant | i     | 0     |       |       |       |       |
+| g     | sco-O |       |       |       |       |       |
+| e     | r     |       |       |       |       |       |
+| netic | tega, |       |       |       |       |       |
+| div   | J.,   |       |       |       |       |       |
+| e     | Sa    |       |       |       |       |       |
+| rsity | n     |       |       |       |       |       |
+| in    | tos-G |       |       |       |       |       |
+| the   | u     |       |       |       |       |       |
+| C     | erra, |       |       |       |       |       |
+| anary | A.,   |       |       |       |       |       |
+| Is    | Chul  |       |       |       |       |       |
+| l     | Kim,  |       |       |       |       |       |
+| ands: | S.,   |       |       |       |       |       |
+| a con | Cra   |       |       |       |       |       |
+| ser   | w     |       |       |       |       |       |
+| v     | ford, |       |       |       |       |       |
+| ation | D. J. |       |       |       |       |       |
+| p ers |       |       |       |       |       |       |
+| p     |       |       |       |       |       |       |
+| ectiv |       |       |       |       |       |       |
+| e](   |       |       |       |       |       |       |
+| ht%20 |       |       |       |       |       |       |
+| t%20p |       |       |       |       |       |       |
+| s:%20 |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0%20% |       |       |       |       |       |       |
+| 20//b |       |       |       |       |       |       |
+| %%2%2 |       |       |       |       |       |       |
+| 0020s |       |       |       |       |       |       |
+| ap%20 |       |       |       |       |       |       |
+| ub%20 |       |       |       |       |       |       |
+| s%20% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0.on% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| l%2%2 |       |       |       |       |       |       |
+| 00ine |       |       |       |       |       |       |
+| li%20 |       |       |       |       |       |       |
+| %2%20 |       |       |       |       |       |       |
+| 0%20% |       |       |       |       |       |       |
+| 20bra |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0%20% |       |       |       |       |       |       |
+| 20ry. |       |       |       |       |       |       |
+| w%2%2 |       |       |       |       |       |       |
+| 00il% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| %2%20 |       |       |       |       |       |       |
+| 0%20e |       |       |       |       |       |       |
+| y.%20 |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0com% |       |       |       |       |       |       |
+| 20/do |       |       |       |       |       |       |
+| %%2%2 |       |       |       |       |       |       |
+| 0020% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| i/%20 |       |       |       |       |       |       |
+| 1%20% |       |       |       |       |       |       |
+| 200.2 |       |       |       |       |       |       |
+| %20%2 |       |       |       |       |       |       |
+| 0307% |       |       |       |       |       |       |
+| 20%20 |       |       |       |       |       |       |
+| %%2%2 |       |       |       |       |       |       |
+| 0020/ |       |       |       |       |       |       |
+| 26%20 |       |       |       |       |       |       |
+| %2%20 |       |       |       |       |       |       |
+| 0%205 |       |       |       |       |       |       |
+| 6988) |       |       |       |       |       |       |
++-------+-------+-------+-------+-------+-------+-------+
+| Re    | N.    | 2001  | no    | 0     | no    | no    |
+| l     | Membr |       |       |       |       |       |
+| ative | ives, |       |       |       |       |       |
+| inf   | J.    |       |       |       |       |       |
+| l     | Pedro |       |       |       |       |       |
+| uence | la-Mo |       |       |       |       |       |
+| of    | nfort |       |       |       |       |       |
+| biol  | & J.  |       |       |       |       |       |
+| o     | C     |       |       |       |       |       |
+| gical | aujap |       |       |       |       |       |
+| v     | é-Cas |       |       |       |       |       |
+| ersus | tells |       |       |       |       |       |
+| hist  |       |       |       |       |       |       |
+| o     |       |       |       |       |       |       |
+| rical |       |       |       |       |       |       |
+| f     |       |       |       |       |       |       |
+| a     |       |       |       |       |       |       |
+| ctors |       |       |       |       |       |       |
+| on i  |       |       |       |       |       |       |
+| s     |       |       |       |       |       |       |
+| ozyme |       |       |       |       |       |       |
+| var   |       |       |       |       |       |       |
+| i     |       |       |       |       |       |       |
+| ation |       |       |       |       |       |       |
+| of    |       |       |       |       |       |       |
+| the   |       |       |       |       |       |       |
+| genus |       |       |       |       |       |       |
+| A     |       |       |       |       |       |       |
+| ndroc |       |       |       |       |       |       |
+| y     |       |       |       |       |       |       |
+| mbium |       |       |       |       |       |       |
+| (C    |       |       |       |       |       |       |
+| o     |       |       |       |       |       |       |
+| lchic |       |       |       |       |       |       |
+| a     |       |       |       |       |       |       |
+| ceae) |       |       |       |       |       |       |
+| in A  |       |       |       |       |       |       |
+| frica |       |       |       |       |       |       |
++-------+-------+-------+-------+-------+-------+-------+
+| Sobre | FRAN  | 1946  | no    | 0     | no    | no    |
+| el    | CISCO |       |       |       |       |       |
+| An    | B     |       |       |       |       |       |
+| drocy | ELLOT |       |       |       |       |       |
+| mbium | RODR  |       |       |       |       |       |
+| gram  | ÍGUEZ |       |       |       |       |       |
+| ineum |       |       |       |       |       |       |
+| (     |       |       |       |       |       |       |
+| Cav.) |       |       |       |       |       |       |
+| Mc.   |       |       |       |       |       |       |
+| Bride |       |       |       |       |       |       |
+| var.  |       |       |       |       |       |       |
+| gen   |       |       |       |       |       |       |
+| uinum |       |       |       |       |       |       |
+| M     |       |       |       |       |       |       |
+| aire. |       |       |       |       |       |       |
+| Tres  |       |       |       |       |       |       |
+| f     |       |       |       |       |       |       |
+| ormas |       |       |       |       |       |       |
+| espa  |       |       |       |       |       |       |
+| ñolas |       |       |       |       |       |       |
++-------+-------+-------+-------+-------+-------+-------+
+| Space | J.    | 2002  | no    | 0     | no    | no    |
+| -time | Ca    |       |       |       |       |       |
+| diver | ujapé |       |       |       |       |       |
+| sific | -Cast |       |       |       |       |       |
+| ation | ells, |       |       |       |       |       |
+| of    | R. K. |       |       |       |       |       |
+| An    | Ja    |       |       |       |       |       |
+| drocy | nsen, |       |       |       |       |       |
+| mbium | J.    |       |       |       |       |       |
+| W     | Pedro |       |       |       |       |       |
+| illd. | la-Mo |       |       |       |       |       |
+| (Col  | nfort |       |       |       |       |       |
+| chica | & N.  |       |       |       |       |       |
+| ceae) | Memb  |       |       |       |       |       |
+| in    | rives |       |       |       |       |       |
+| we    |       |       |       |       |       |       |
+| stern |       |       |       |       |       |       |
+| South |       |       |       |       |       |       |
+| A     |       |       |       |       |       |       |
+| frica |       |       |       |       |       |       |
++-------+-------+-------+-------+-------+-------+-------+
+| Syste | J.    | 2003  | no    | 0     | no    | no    |
+| matic | P     |       |       |       |       |       |
+| rel   | EDROL |       |       |       |       |       |
+| ation | A-MON |       |       |       |       |       |
+| ships | FORT, |       |       |       |       |       |
+| of    | N.    |       |       |       |       |       |
+| some  | MEMBR |       |       |       |       |       |
+| sp    | IVES, |       |       |       |       |       |
+| ecies | J. M. |       |       |       |       |       |
+| of    | MONTS |       |       |       |       |       |
+| the   | ERRAT |       |       |       |       |       |
+| genus | AND   |       |       |       |       |       |
+| An    | J.    |       |       |       |       |       |
+| drocy | CAUJA |       |       |       |       |       |
+| mbium | PÉCAS |       |       |       |       |       |
+|       | TELLS |       |       |       |       |       |
++-------+-------+-------+-------+-------+-------+-------+
+| Taxo  | Hoyo, | 2010  | si    | 10    | si    | es    |
+| nomic | Al    |       |       |       |       | gram  |
+| cla   | berto |       |       |       |       | ineum |
+| rific | Del,  |       |       |       |       | en    |
+| ation | and   |       |       |       |       | Al    |
+| in W  | P     |       |       |       |       | mería |
+| Med   | edrol |       |       |       |       |       |
+| iterr | a-Mon |       |       |       |       |       |
+| anean | fort, |       |       |       |       |       |
+| An    | Joan  |       |       |       |       |       |
+| drocy |       |       |       |       |       |       |
+| mbium |       |       |       |       |       |       |
+| (Colc |       |       |       |       |       |       |
+| hicac |       |       |       |       |       |       |
+| eae): |       |       |       |       |       |       |
+| A.    |       |       |       |       |       |       |
+| wyss  |       |       |       |       |       |       |
+| ianum |       |       |       |       |       |       |
+| sunk  |       |       |       |       |       |       |
+| in    |       |       |       |       |       |       |
+| the   |       |       |       |       |       |       |
+| syn   |       |       |       |       |       |       |
+| onymy |       |       |       |       |       |       |
+| of A. |       |       |       |       |       |       |
+| gram  |       |       |       |       |       |       |
+| ineum |       |       |       |       |       |       |
+| and   |       |       |       |       |       |       |
+| A.    |       |       |       |       |       |       |
+| euro  |       |       |       |       |       |       |
+| paeum |       |       |       |       |       |       |
+| res   |       |       |       |       |       |       |
+| tored |       |       |       |       |       |       |
++-------+-------+-------+-------+-------+-------+-------+
+| Tem   | Al    | 2009  | no    | 0     | no    | no    |
+| poral | berto |       |       |       |       |       |
+| and   | del   |       |       |       |       |       |
+| sp    | Hoyo, |       |       |       |       |       |
+| atial | José  |       |       |       |       |       |
+| diver | Luis  |       |       |       |       |       |
+| sific | Gar   |       |       |       |       |       |
+| ation | cía-M |       |       |       |       |       |
+| of    | arín, |       |       |       |       |       |
+| the   | Joan  |       |       |       |       |       |
+| Af    | Pedro |       |       |       |       |       |
+| rican | la-Mo |       |       |       |       |       |
+| dis   | nfort |       |       |       |       |       |
+| junct |       |       |       |       |       |       |
+| genus |       |       |       |       |       |       |
+|       |       |       |       |       |       |       |
+| An    |       |       |       |       |       |       |
+| drocy |       |       |       |       |       |       |
+| mbium |       |       |       |       |       |       |
+| (Col  |       |       |       |       |       |       |
+| chica |       |       |       |       |       |       |
+| ceae) |       |       |       |       |       |       |
++-------+-------+-------+-------+-------+-------+-------+
+| THE   | Joan  | 1998  | no    | 0     | no    | no    |
+| AN    | Pedro |       |       |       |       |       |
+| DROCY | la-Mo |       |       |       |       |       |
+| MBIUM | nfort |       |       |       |       |       |
+| SP    | and   |       |       |       |       |       |
+| ECIES | Juli  |       |       |       |       |       |
+| OF    | Ca    |       |       |       |       |       |
+| THE   | ujape |       |       |       |       |       |
+| C     | ´-Cas |       |       |       |       |       |
+| ANARY | tells |       |       |       |       |       |
+|       |       |       |       |       |       |       |
+| IS    |       |       |       |       |       |       |
+| LANDS |       |       |       |       |       |       |
++-------+-------+-------+-------+-------+-------+-------+
+| The   | John  | 2007  | no    | 0     | no    | no    |
+| genus | Man   |       |       |       |       |       |
+| Colc  | ning, |       |       |       |       |       |
+| hicum | Felix |       |       |       |       |       |
+| L.    | Fo    |       |       |       |       |       |
+| rede  | rest, |       |       |       |       |       |
+| fined | A     |       |       |       |       |       |
+| to    | nnika |       |       |       |       |       |
+| in    | Vinne |       |       |       |       |       |
+| clude | rsten |       |       |       |       |       |
+| An    |       |       |       |       |       |       |
+| drocy |       |       |       |       |       |       |
+| mbium |       |       |       |       |       |       |
+| W     |       |       |       |       |       |       |
+| illd. |       |       |       |       |       |       |
+| based |       |       |       |       |       |       |
+| on    |       |       |       |       |       |       |
+| mole  |       |       |       |       |       |       |
+| cular |       |       |       |       |       |       |
+| evi   |       |       |       |       |       |       |
+| dence |       |       |       |       |       |       |
++-------+-------+-------+-------+-------+-------+-------+
+| The   | Juli  | 2003  | si    | 13    | no,   | es    |
+| infl  | Ca    |       |       |       | p     | gram  |
+| uence | ujapé |       |       |       | oblac | ineum |
+| of    | -Cast |       |       |       | iones |       |
+| the   | ells, |       |       |       | en    |       |
+| Mi    | R     |       |       |       | Al    |       |
+| ocene | obert |       |       |       | mería |       |
+| Med   | K.    |       |       |       |       |       |
+| iterr | J     |       |       |       |       |       |
+| anean | ansen |       |       |       |       |       |
+| d     |       |       |       |       |       |       |
+| esicc |       |       |       |       |       |       |
+| ation |       |       |       |       |       |       |
+| on    |       |       |       |       |       |       |
+| the   |       |       |       |       |       |       |
+| ge    |       |       |       |       |       |       |
+| ograp |       |       |       |       |       |       |
+| hical |       |       |       |       |       |       |
+| expa  |       |       |       |       |       |       |
+| nsion |       |       |       |       |       |       |
+| and   |       |       |       |       |       |       |
+| ge    |       |       |       |       |       |       |
+| netic |       |       |       |       |       |       |
+| vari  |       |       |       |       |       |       |
+| ation |       |       |       |       |       |       |
+| of    |       |       |       |       |       |       |
+| An    |       |       |       |       |       |       |
+| drocy |       |       |       |       |       |       |
+| mbium |       |       |       |       |       |       |
+| gram  |       |       |       |       |       |       |
+| ineum |       |       |       |       |       |       |
+| (     |       |       |       |       |       |       |
+| Cav.) |       |       |       |       |       |       |
+| Mc    |       |       |       |       |       |       |
+| Bride |       |       |       |       |       |       |
+| (Col  |       |       |       |       |       |       |
+| chica |       |       |       |       |       |       |
+| ceae) |       |       |       |       |       |       |
++-------+-------+-------+-------+-------+-------+-------+
