@@ -5,467 +5,721 @@ date: '`r Sys.Date()`'
 output: html_document
 ---
 
-+-----------+--------+---+--------+--------+-------------+-----------+
-| titulo    | a      | a | re     | número | coordenadas | in        |
-| artículo  | utores | ñ | gistro | reg    |             | formación |
-|           | y año  | o | a.     | istros |             | adicional |
-|           |        |   | eur    |        |             |           |
-|           |        |   | opaeum |        |             |           |
-+===========+========+===+========+========+=============+===========+
-| [Ch       | Cauja  | 1 | si     | 9      | no          | no        |
-| loroplast | pe-Cas | 9 |        |        |             |           |
-| DNA       | tells, | 9 |        |        |             |           |
-| Re        | J.,    | 9 |        |        |             |           |
-| striction | J      |   |        |        |             |           |
-| Site      | ansen, |   |        |        |             |           |
-| Phylogeny | R. K., |   |        |        |             |           |
-| of the    | Pedr   |   |        |        |             |           |
-| Genus     | ola-Mo |   |        |        |             |           |
-| And       | nfort, |   |        |        |             |           |
-| rocymbium | J., &  |   |        |        |             |           |
-| (Colchic  | Memb   |   |        |        |             |           |
-| aceae)](h | rives, |   |        |        |             |           |
-| ttps://sc | N.     |   |        |        |             |           |
-| i-hub.se/ |        |   |        |        |             |           |
-| https://w |        |   |        |        |             |           |
-| ww.jstor. |        |   |        |        |             |           |
-| org/stabl |        |   |        |        |             |           |
-| e/2419644 |        |   |        |        |             |           |
-| ?origin=c |        |   |        |        |             |           |
-| rossref#) |        |   |        |        |             |           |
-+-----------+--------+---+--------+--------+-------------+-----------+
-| [Con      | Montse | 1 | si     | 8      | no, pero si | si        |
-| tribución | rrat-R | 9 |        |        | l           |           |
-| al        | ecoder | 6 |        |        | ocalización |           |
-| Con       |        | 1 |        |        | aproximada  |           |
-| ocimiento |        |   |        |        |             |           |
-| de los    |        |   |        |        |             |           |
-| Pastos    |        |   |        |        |             |           |
-| Al        |        |   |        |        |             |           |
-| merienses |        |   |        |        |             |           |
-| 1](       |        |   |        |        |             |           |
-| https://c |        |   |        |        |             |           |
-| ore.ac.uk |        |   |        |        |             |           |
-| /download |        |   |        |        |             |           |
-| /pdf/3609 |        |   |        |        |             |           |
-| 3726.pdf) |        |   |        |        |             |           |
-+-----------+--------+---+--------+--------+-------------+-----------+
-| [Cor      | N.     | 2 | no     | 0      | no          | no        |
-| relations | Memb   | 0 |        |        |             |           |
-| between   | rives, | 0 |        |        |             |           |
-| morpho    | J.     | 3 |        |        |             |           |
-| logical-a | Ped    |   |        |        |             |           |
-| natomical | rola-M |   |        |        |             |           |
-| leaf      | onfort |   |        |        |             |           |
-| charac    | & J.   |   |        |        |             |           |
-| teristics | Caju   |   |        |        |             |           |
-| and       | apé-Ca |   |        |        |             |           |
-| envi      | stells |   |        |        |             |           |
-| ronmental |        |   |        |        |             |           |
-| traits in |        |   |        |        |             |           |
-| southwest |        |   |        |        |             |           |
-| african   |        |   |        |        |             |           |
-| species   |        |   |        |        |             |           |
-| of        |        |   |        |        |             |           |
-| And       |        |   |        |        |             |           |
-| rocymbium |        |   |        |        |             |           |
-| (Colch    |        |   |        |        |             |           |
-| icaceae)] |        |   |        |        |             |           |
-| (http://w |        |   |        |        |             |           |
-| ww.step.e |        |   |        |        |             |           |
-| s/jardcan |        |   |        |        |             |           |
-| /73Membri |        |   |        |        |             |           |
-| ves,Pedro |        |   |        |        |             |           |
-| laMonfort |        |   |        |        |             |           |
-| &Caujape- |        |   |        |        |             |           |
-| Castells2 |        |   |        |        |             |           |
-| 003a.pdf) |        |   |        |        |             |           |
-+-----------+--------+---+--------+--------+-------------+-----------+
-| [De       | Mül    | 2 | no     | 0      | no          | no        |
-| Li        | ler-Do | 0 |        |        |             |           |
-| liifloris | blies, | 0 |        |        |             |           |
-| Notulae7. | U., &  | 2 |        |        |             |           |
-| De        | Mül    |   |        |        |             |           |
-| decuria   | ler-Do |   |        |        |             |           |
-| altera    | blies, |   |        |        |             |           |
-| specierum | D.     |   |        |        |             |           |
-| novarum   |        |   |        |        |             |           |
-| generis   |        |   |        |        |             |           |
-| Androcym  |        |   |        |        |             |           |
-| bium(Colc |        |   |        |        |             |           |
-| hicaceae) |        |   |        |        |             |           |
-| in Africa |        |   |        |        |             |           |
-| Australi  |        |   |        |        |             |           |
-| s.l](ht   |        |   |        |        |             |           |
-| tps://sci |        |   |        |        |             |           |
-| -hub.se/h |        |   |        |        |             |           |
-| ttps://on |        |   |        |        |             |           |
-| linelibra |        |   |        |        |             |           |
-| ry.wiley. |        |   |        |        |             |           |
-| com/doi/e |        |   |        |        |             |           |
-| pdf/10.10 |        |   |        |        |             |           |
-| 02/fedr.2 |        |   |        |        |             |           |
-| 00290006) |        |   |        |        |             |           |
-+-----------+--------+---+--------+--------+-------------+-----------+
-| [         | Cauja  | 2 | si     | 9      | no,         | si        |
-| Designing | pé-Cas | 0 |        |        | poblaciones |           |
-| ex-situ   | tells, | 0 |        |        | por         |           |
-| con       | J.,    | 4 |        |        | localidad   |           |
-| servation | Pedr   |   |        |        |             |           |
-| s         | ola-Mo |   |        |        |             |           |
-| trategies | nfort, |   |        |        |             |           |
-| through   | J      |   |        |        |             |           |
-| the       |        |   |        |        |             |           |
-| a         |        |   |        |        |             |           |
-| ssessment |        |   |        |        |             |           |
-| of        |        |   |        |        |             |           |
-| neutral   |        |   |        |        |             |           |
-| genetic   |        |   |        |        |             |           |
-| markers:  |        |   |        |        |             |           |
-| Ap        |        |   |        |        |             |           |
-| plication |        |   |        |        |             |           |
-| to the    |        |   |        |        |             |           |
-| e         |        |   |        |        |             |           |
-| ndangered |        |   |        |        |             |           |
-| And       |        |   |        |        |             |           |
-| rocymbium |        |   |        |        |             |           |
-| gramin    |        |   |        |        |             |           |
-| eum](http |        |   |        |        |             |           |
-| s://link. |        |   |        |        |             |           |
-| springer. |        |   |        |        |             |           |
-| com/artic |        |   |        |        |             |           |
-| le/10.102 |        |   |        |        |             |           |
-| 3/B:COGE. |        |   |        |        |             |           |
-| 000002999 |        |   |        |        |             |           |
-| 7.59502.8 |        |   |        |        |             |           |
-| 8#citeas) |        |   |        |        |             |           |
-+-----------+--------+---+--------+--------+-------------+-----------+
-| [Flora de | S      | 1 | si     | 0      | no,         | si        |
-| Almería:  | agredo | 9 |        |        | poblaciones |           |
-| plantas   | Arnaiz | 8 |        |        | por         |           |
-| v         |        | 7 |        |        | localidad   |           |
-| asculares |        |   |        |        |             |           |
-| de la     |        |   |        |        |             |           |
-| provi     |        |   |        |        |             |           |
-| ncia](htt |        |   |        |        |             |           |
-| ps://www. |        |   |        |        |             |           |
-| dipalme.o |        |   |        |        |             |           |
-| rg/Servic |        |   |        |        |             |           |
-| ios/Anexo |        |   |        |        |             |           |
-| s/anexosi |        |   |        |        |             |           |
-| ea.nsf/VA |        |   |        |        |             |           |
-| nexos/IEA |        |   |        |        |             |           |
-| -FA-f-c2/ |        |   |        |        |             |           |
-| $File/FA- |        |   |        |        |             |           |
-| f-c2.pdf) |        |   |        |        |             |           |
-+-----------+--------+---+--------+--------+-------------+-----------+
-| [H        | Cauja  | 2 | si     | 9      | no,         | si        |
-| istorical | pe-Cas | 0 |        |        | poblaciones |           |
-| bio       | tells, | 0 |        |        | por         |           |
-| geography | J.,    | 8 |        |        | localidad   |           |
-| of        | J      |   |        |        |             |           |
-| And       | ansen, |   |        |        |             |           |
-| rocymbium | R. K., |   |        |        |             |           |
-| Wi        | Memb   |   |        |        |             |           |
-| lld.(Colc | rives, |   |        |        |             |           |
-| hicaceae) | N.,    |   |        |        |             |           |
-| in        | Pedr   |   |        |        |             |           |
-| Africa:   | ola-Mo |   |        |        |             |           |
-| evidence  | nfort, |   |        |        |             |           |
-| from      | J.,    |   |        |        |             |           |
-| cpDNA     | Monts  |   |        |        |             |           |
-| RFLPs](ht | errat, |   |        |        |             |           |
-| tps://aca | J. M., |   |        |        |             |           |
-| demic.oup | &      |   |        |        |             |           |
-| .com/botl | Ar     |   |        |        |             |           |
-| innean/ar | danuy, |   |        |        |             |           |
-| ticle/136 | A.     |   |        |        |             |           |
-| /4/379/25 |        |   |        |        |             |           |
-| 57188?log |        |   |        |        |             |           |
-| in=false) |        |   |        |        |             |           |
-+-----------+--------+---+--------+--------+-------------+-----------+
-| [Missing  | Del    | 2 | si     | 9      | no,         | si        |
-| Links     | Hoyo,  | 0 |        |        | poblaciones |           |
-| Between   | A.,    | 0 |        |        | por         |           |
-| Disjunct  | Pedr   | 6 |        |        | localidad   |           |
-| Po        | ola-Mo |   |        |        |             |           |
-| pulations | nfort, |   |        |        |             |           |
-| of        | J.     |   |        |        |             |           |
-| And       |        |   |        |        |             |           |
-| rocymbium |        |   |        |        |             |           |
-| (Colc     |        |   |        |        |             |           |
-| hicaceae) |        |   |        |        |             |           |
-| in Africa |        |   |        |        |             |           |
-| Using     |        |   |        |        |             |           |
-| Ch        |        |   |        |        |             |           |
-| loroplast |        |   |        |        |             |           |
-| DNA       |        |   |        |        |             |           |
-| Noncoding |        |   |        |        |             |           |
-| Se        |        |   |        |        |             |           |
-| quences]( |        |   |        |        |             |           |
-| https://s |        |   |        |        |             |           |
-| cholarshi |        |   |        |        |             |           |
-| p.claremo |        |   |        |        |             |           |
-| nt.edu/cg |        |   |        |        |             |           |
-| i/viewcon |        |   |        |        |             |           |
-| tent.cgi? |        |   |        |        |             |           |
-| article=1 |        |   |        |        |             |           |
-| 598&conte |        |   |        |        |             |           |
-| xt=aliso) |        |   |        |        |             |           |
-+-----------+--------+---+--------+--------+-------------+-----------+
-| [         | J.     | 1 | si     | 10     | no,         | no        |
-| Allozymic | Ped    | 9 |        |        | poblaciones |           |
-| and       | rola-M | 9 |        |        | por         |           |
-| morp      | onfort | 4 |        |        | localidad   |           |
-| hological | & J.   |   |        |        |             |           |
-| rela      | Caju   |   |        |        |             |           |
-| tionships | apé-Ca |   |        |        |             |           |
-| among     | stells |   |        |        |             |           |
-| And       |        |   |        |        |             |           |
-| rocymbium |        |   |        |        |             |           |
-| g         |        |   |        |        |             |           |
-| ramineum, |        |   |        |        |             |           |
-| A.        |        |   |        |        |             |           |
-| e         |        |   |        |        |             |           |
-| uropaeum, |        |   |        |        |             |           |
-| and A.    |        |   |        |        |             |           |
-| psa       |        |   |        |        |             |           |
-| mmophilum |        |   |        |        |             |           |
-| (Colch    |        |   |        |        |             |           |
-| icaceae)] |        |   |        |        |             |           |
-| (https:// |        |   |        |        |             |           |
-| link.spri |        |   |        |        |             |           |
-| nger.com/ |        |   |        |        |             |           |
-| article/1 |        |   |        |        |             |           |
-| 0.1007/BF |        |   |        |        |             |           |
-| 00985346) |        |   |        |        |             |           |
-+-----------+--------+---+--------+--------+-------------+-----------+
-| [Genetic  | J.     | 1 | si     | 10     | no,         | no        |
-| and       | Ped    | 9 |        |        | poblaciones |           |
-| morp      | rola-M | 9 |        |        | por         |           |
-| hological | onfort | 6 |        |        | localidad   |           |
-| d         | & J.   |   |        |        |             |           |
-| ivergence | Caju   |   |        |        |             |           |
-| in the    | apé-Ca |   |        |        |             |           |
-| And       | stells |   |        |        |             |           |
-| rocymbium |        |   |        |        |             |           |
-| gramineum |        |   |        |        |             |           |
-| complex   |        |   |        |        |             |           |
-| (Colch    |        |   |        |        |             |           |
-| icaceae)] |        |   |        |        |             |           |
-| (https:// |        |   |        |        |             |           |
-| link.spri |        |   |        |        |             |           |
-| nger.com/ |        |   |        |        |             |           |
-| article/1 |        |   |        |        |             |           |
-| 0.1007/BF |        |   |        |        |             |           |
-| 00989058) |        |   |        |        |             |           |
-+-----------+--------+---+--------+--------+-------------+-----------+
-| [The      | Cauja  | 2 |        |        |             |           |
-| influence | pé-Cas | 0 |        |        |             |           |
-| of the    | tells, | 0 |        |        |             |           |
-| Miocene   | J. and | 3 |        |        |             |           |
-| Medi      | J      |   |        |        |             |           |
-| terranean | ansen, |   |        |        |             |           |
-| de        | R.K    |   |        |        |             |           |
-| siccation |        |   |        |        |             |           |
-| on the    |        |   |        |        |             |           |
-| geo       |        |   |        |        |             |           |
-| graphical |        |   |        |        |             |           |
-| expansion |        |   |        |        |             |           |
-| and       |        |   |        |        |             |           |
-| genetic   |        |   |        |        |             |           |
-| variation |        |   |        |        |             |           |
-| of        |        |   |        |        |             |           |
-| And       |        |   |        |        |             |           |
-| rocymbium |        |   |        |        |             |           |
-| gramineum |        |   |        |        |             |           |
-| (Cav.)    |        |   |        |        |             |           |
-| McBride   |        |   |        |        |             |           |
-| (Colchic  |        |   |        |        |             |           |
-| aceae)](h |        |   |        |        |             |           |
-| ttps://on |        |   |        |        |             |           |
-| linelibra |        |   |        |        |             |           |
-| ry.wiley. |        |   |        |        |             |           |
-| com/doi/a |        |   |        |        |             |           |
-| bs/10.104 |        |   |        |        |             |           |
-| 6/j.1365- |        |   |        |        |             |           |
-| 294X.2003 |        |   |        |        |             |           |
-| .01839.x) |        |   |        |        |             |           |
-+-----------+--------+---+--------+--------+-------------+-----------+
-| [Spa      | J.     | 1 | si     | 1      | no,         | no        |
-| ce---time | Ped    | 9 |        |        | población   |           |
-| patterns  | rola-M | 9 |        |        | por         |           |
-| of        | onfort | 6 |        |        | localidad   |           |
-| genetic   | & J.   |   |        |        |             |           |
-| struct    | Caju   |   |        |        |             |           |
-| urewithin | apé-Ca |   |        |        |             |           |
-| a stand   | stells |   |        |        |             |           |
-| of        |        |   |        |        |             |           |
-| And       |        |   |        |        |             |           |
-| rocymbium |        |   |        |        |             |           |
-| gramineum |        |   |        |        |             |           |
-| (Cay.)    |        |   |        |        |             |           |
-| McBride   |        |   |        |        |             |           |
-| (Colc     |        |   |        |        |             |           |
-| hicaceae) |        |   |        |        |             |           |
-| ](https:/ |        |   |        |        |             |           |
-| /www.natu |        |   |        |        |             |           |
-| re.com/ar |        |   |        |        |             |           |
-| ticles/hd |        |   |        |        |             |           |
-| y1997166) |        |   |        |        |             |           |
-+-----------+--------+---+--------+--------+-------------+-----------+
-| [O        | Elli   | 2 | no     | 0      | no          | no        |
-| ccurrence | ngton, | 0 |        |        |             |           |
-| of        | E.,    | 0 |        |        |             |           |
-| c         | Ba     | 3 |        |        |             |           |
-| olchicine | stida, |   |        |        |             |           |
-| de        | J.,    |   |        |        |             |           |
-| rivatives | Vila   |   |        |        |             |           |
-| in plants | domat, |   |        |        |             |           |
-| of the    | F.,    |   |        |        |             |           |
-| genus     | Si     |   |        |        |             |           |
-| And       | manek, |   |        |        |             |           |
-| rocymbium | V., &  |   |        |        |             |           |
-| ](https:/ | C      |   |        |        |             |           |
-| /www.scie | odina, |   |        |        |             |           |
-| ncedirect | C.     |   |        |        |             |           |
-| .com/scie |        |   |        |        |             |           |
-| nce/artic |        |   |        |        |             |           |
-| le/pii/S0 |        |   |        |        |             |           |
-| 305197802 |        |   |        |        |             |           |
-| 00248X?vi |        |   |        |        |             |           |
-| a%3Dihub) |        |   |        |        |             |           |
-+-----------+--------+---+--------+--------+-------------+-----------+
-| [Pollen   | M      | 1 |        |        |             |           |
-| m         | artin, | 9 |        |        |             |           |
-| orphology | J.,    | 9 |        |        |             |           |
-| and       | Pedr   | 3 |        |        |             |           |
-| biometry  | ola-Mo |   |        |        |             |           |
-| in        | nfort, |   |        |        |             |           |
-| And       | J.,    |   |        |        |             |           |
-| rocymbium | Ca     |   |        |        |             |           |
-| (Colchic  | ujapé, |   |        |        |             |           |
-| aceae)](h | J.     |   |        |        |             |           |
-| ttps://cd |        |   |        |        |             |           |
-| nsciencep |        |   |        |        |             |           |
-| ub.com/do |        |   |        |        |             |           |
-| i/10.1139 |        |   |        |        |             |           |
-| /b93-163) |        |   |        |        |             |           |
-+-----------+--------+---+--------+--------+-------------+-----------+
-| [Kar      | Ma     | 1 |        |        |             |           |
-| yological | rgelí, | 9 |        |        |             |           |
-| Studies   | M.,    | 9 |        |        |             |           |
-| in the    | Pedr   | 9 |        |        |             |           |
-| Genus     | ola-Mo |   |        |        |             |           |
-| And       | nfort, |   |        |        |             |           |
-| rocymbium | J.,    |   |        |        |             |           |
-| (C        | V      |   |        |        |             |           |
-| olchicace | allés, |   |        |        |             |           |
-| ae)](http | J.     |   |        |        |             |           |
-| s://www.p |        |   |        |        |             |           |
-| ublish.cs |        |   |        |        |             |           |
-| iro.au/bt |        |   |        |        |             |           |
-| /BT97006) |        |   |        |        |             |           |
-+-----------+--------+---+--------+--------+-------------+-----------+
-| [Co       | Cauja  | 1 | no     | 0      | no          | no        |
-| ntrasting | pé-Cas | 9 |        |        |             |           |
-| patterns  | tells, | 9 |        |        |             |           |
-| of        | J.,    | 9 |        |        |             |           |
-| genetic   | Pedr   |   |        |        |             |           |
-| structure | ola-Mo |   |        |        |             |           |
-| in the    | nfort, |   |        |        |             |           |
-| South     | J.,    |   |        |        |             |           |
-| African   | Memb   |   |        |        |             |           |
-| species   | rives, |   |        |        |             |           |
-| And       | N.     |   |        |        |             |           |
-| rocymbium |        |   |        |        |             |           |
-| bellum,   |        |   |        |        |             |           |
-| A.        |        |   |        |        |             |           |
-| guttatum  |        |   |        |        |             |           |
-| and A.    |        |   |        |        |             |           |
-| pulchrum  |        |   |        |        |             |           |
-| (Colc     |        |   |        |        |             |           |
-| hicaceae) |        |   |        |        |             |           |
-| ](https:/ |        |   |        |        |             |           |
-| /www.scie |        |   |        |        |             |           |
-| ncedirect |        |   |        |        |             |           |
-| .com/scie |        |   |        |        |             |           |
-| nce/artic |        |   |        |        |             |           |
-| le/pii/S0 |        |   |        |        |             |           |
-| 305197898 |        |   |        |        |             |           |
-| 001306?vi |        |   |        |        |             |           |
-| a%3Dihub) |        |   |        |        |             |           |
-+-----------+--------+---+--------+--------+-------------+-----------+
-| [Relative | Memb   | 2 | no     | 0      | no          | no        |
-| influence | rives, | 0 |        |        |             |           |
-| of        | N.Pedr | 0 |        |        |             |           |
-| b         | ola-Mo | 1 |        |        |             |           |
-| iological | nfort, |   |        |        |             |           |
-| versus    | J.,    |   |        |        |             |           |
-| h         | Cauja  |   |        |        |             |           |
-| istorical | pé-Cas |   |        |        |             |           |
-| factors   | tells, |   |        |        |             |           |
-| on        | J.     |   |        |        |             |           |
-| isozyme   |        |   |        |        |             |           |
-| variation |        |   |        |        |             |           |
-| of the    |        |   |        |        |             |           |
-| genus     |        |   |        |        |             |           |
-| And       |        |   |        |        |             |           |
-| rocymbium |        |   |        |        |             |           |
-| (Colc     |        |   |        |        |             |           |
-| hicaceae) |        |   |        |        |             |           |
-| in        |        |   |        |        |             |           |
-| A         |        |   |        |        |             |           |
-| frica](ht |        |   |        |        |             |           |
-| tps://lin |        |   |        |        |             |           |
-| k.springe |        |   |        |        |             |           |
-| r.com/art |        |   |        |        |             |           |
-| icle/10.1 |        |   |        |        |             |           |
-| 007/s0060 |        |   |        |        |             |           |
-| 60170013) |        |   |        |        |             |           |
-+-----------+--------+---+--------+--------+-------------+-----------+
-| [         | M      | 2 | no     | 0      | no          | no        |
-| Allozymic | ateu-A | 0 |        |        |             |           |
-| variation | ndrés, | 0 |        |        |             |           |
-| and       | I.     | 8 |        |        |             |           |
-| d         |        |   |        |        |             |           |
-| ivergence |        |   |        |        |             |           |
-| in        |        |   |        |        |             |           |
-| thr       |        |   |        |        |             |           |
-| eespecies |        |   |        |        |             |           |
-| of        |        |   |        |        |             |           |
-| Ant       |        |   |        |        |             |           |
-| irrhinurn |        |   |        |        |             |           |
-| L.        |        |   |        |        |             |           |
-| (Scrophu  |        |   |        |        |             |           |
-| lariaceae |        |   |        |        |             |           |
-| -Antirrhi |        |   |        |        |             |           |
-| neae)](ht |        |   |        |        |             |           |
-| tps://aca |        |   |        |        |             |           |
-| demic.oup |        |   |        |        |             |           |
-| .com/botl |        |   |        |        |             |           |
-| innean/ar |        |   |        |        |             |           |
-| ticle/131 |        |   |        |        |             |           |
-| /2/187/25 |        |   |        |        |             |           |
-| 67128?log |        |   |        |        |             |           |
-| in=false) |        |   |        |        |             |           |
-+-----------+--------+---+--------+--------+-------------+-----------+
-| [Plant    | Franc  | 2 | no     | 0      | no          | no        |
-| genetic   | isco-O | 0 |        |        |             |           |
-| diversity | rtega, | 0 |        |        |             |           |
-| in the    | J.,    | 0 |        |        |             |           |
-| Canary    | Sa     |   |        |        |             |           |
-| Islands:  | ntos-G |   |        |        |             |           |
-| a         | uerra, |   |        |        |             |           |
-| con       | A.,    |   |        |        |             |           |
-| servation | Chul   |   |        |        |             |           |
-| p         | Kim,   |   |        |        |             |           |
-| erspectiv | S.,    |   |        |        |             |           |
-| e](https: | Cra    |   |        |        |             |           |
-| //bsapubs | wford, |   |        |        |             |           |
-| .onlineli | D. J.  |   |        |        |             |           |
-| brary.wil |        |   |        |        |             |           |
-| ey.com/do |        |   |        |        |             |           |
-| i/10.2307 |        |   |        |        |             |           |
-| /2656988) |        |   |        |        |             |           |
-+-----------+--------+---+--------+--------+-------------+-----------+
++--------+--------+--------+--------+--------+--------+--------+
+| titulo | a      | a ñ o  | re     | número | coord  | in     |
+| ar     | utores |        | gistro | reg    | enadas | for    |
+| tículo | y año  |        | a. eur | istros |        | mación |
+|        |        |        | opaeum |        |        | adi    |
+|        |        |        |        |        |        | cional |
++========+========+========+========+========+========+========+
+| [Ch    | Cauja  | 1 9 9  | si     | 9      | no     | no     |
+| lor    | pe-Cas | 9      |        |        |        |        |
+| oplast | tells, |        |        |        |        |        |
+| DNA Re | J., J  |        |        |        |        |        |
+| str    | ansen, |        |        |        |        |        |
+| iction | R. K., |        |        |        |        |        |
+| Site   | Pedr   |        |        |        |        |        |
+| Phy    | ola-Mo |        |        |        |        |        |
+| logeny | nfort, |        |        |        |        |        |
+| of the | J., &  |        |        |        |        |        |
+| Genus  | Memb   |        |        |        |        |        |
+| And    | rives, |        |        |        |        |        |
+| roc    | N.     |        |        |        |        |        |
+| ymbium |        |        |        |        |        |        |
+| (C     |        |        |        |        |        |        |
+| olchic |        |        |        |        |        |        |
+| ace    |        |        |        |        |        |        |
+| ae)](h |        |        |        |        |        |        |
+| %20ttp |        |        |        |        |        |        |
+| s://sc |        |        |        |        |        |        |
+| %20i-h |        |        |        |        |        |        |
+| ub.se/ |        |        |        |        |        |        |
+| %20htt |        |        |        |        |        |        |
+| ps://w |        |        |        |        |        |        |
+| %20ww. |        |        |        |        |        |        |
+| jstor. |        |        |        |        |        |        |
+| %20org |        |        |        |        |        |        |
+| /stabl |        |        |        |        |        |        |
+| %20e/2 |        |        |        |        |        |        |
+| 419644 |        |        |        |        |        |        |
+| %20?or |        |        |        |        |        |        |
+| igin=c |        |        |        |        |        |        |
+| %20ros |        |        |        |        |        |        |
+| sref#) |        |        |        |        |        |        |
++--------+--------+--------+--------+--------+--------+--------+
+| [Con   | Montse | 1 9 6  | si     | 8      | no,    | si     |
+| tri    | rrat-R | 1      |        |        | pero   |        |
+| bución | ecoder |        |        |        | si l   |        |
+| al Con |        |        |        |        | ocali  |        |
+| oci    |        |        |        |        | zación |        |
+| miento |        |        |        |        | apro   |        |
+| de los |        |        |        |        | ximada |        |
+| Pastos |        |        |        |        |        |        |
+| Al     |        |        |        |        |        |        |
+| mer    |        |        |        |        |        |        |
+| ienses |        |        |        |        |        |        |
+| 1](htt |        |        |        |        |        |        |
+| ps://c |        |        |        |        |        |        |
+| %20ore |        |        |        |        |        |        |
+| .ac.uk |        |        |        |        |        |        |
+| %20/do |        |        |        |        |        |        |
+| wnload |        |        |        |        |        |        |
+| %20/pd |        |        |        |        |        |        |
+| f/3609 |        |        |        |        |        |        |
+| %20372 |        |        |        |        |        |        |
+| 6.pdf) |        |        |        |        |        |        |
++--------+--------+--------+--------+--------+--------+--------+
+| [Cor   | N.     | 2 0 0  | no     | 0      | no     | no     |
+| rel    |   Memb | 3      |        |        |        |        |
+| ations |        |        |        |        |        |        |
+| b      | rives, |        |        |        |        |        |
+| etween | O      |        |        |        |        |        |
+| morpho | .  Ped |        |        |        |        |        |
+| log    |        |        |        |        |        |        |
+| ical-a | rola-M |        |        |        |        |        |
+| nat    |        |        |        |        |        |        |
+| omical | onfort |        |        |        |        |        |
+| leaf   |        |        |        |        |        |        |
+| charac |   & J. |        |        |        |        |        |
+| ter    |        |        |        |        |        |        |
+| istics |   Caju |        |        |        |        |        |
+| and    |        |        |        |        |        |        |
+| envi   | apé-Ca |        |        |        |        |        |
+| ron    |        |        |        |        |        |        |
+| mental | stells |        |        |        |        |        |
+| traits |        |        |        |        |        |        |
+| in     |        |        |        |        |        |        |
+| sou    |        |        |        |        |        |        |
+| thwest |        |        |        |        |        |        |
+| a      |        |        |        |        |        |        |
+| frican |        |        |        |        |        |        |
+| s      |        |        |        |        |        |        |
+| pecies |        |        |        |        |        |        |
+| of And |        |        |        |        |        |        |
+| roc    |        |        |        |        |        |        |
+| ymbium |        |        |        |        |        |        |
+| (Colch |        |        |        |        |        |        |
+| ica    |        |        |        |        |        |        |
+| ceae)] |        |        |        |        |        |        |
+| (<htt  |        |        |        |        |        |        |
+| p://w> |        |        |        |        |        |        |
+| ww.    |        |        |        |        |        |        |
+| step.e |        |        |        |        |        |        |
+| s/j    |        |        |        |        |        |        |
+| ardcan |        |        |        |        |        |        |
+| /73    |        |        |        |        |        |        |
+| Membri |        |        |        |        |        |        |
+| ves    |        |        |        |        |        |        |
+| ,Pedro |        |        |        |        |        |        |
+| laM    |        |        |        |        |        |        |
+| onfort |        |        |        |        |        |        |
+| &Ca    |        |        |        |        |        |        |
+| ujape- |        |        |        |        |        |        |
+| Cas    |        |        |        |        |        |        |
+| tells2 |        |        |        |        |        |        |
+| 003    |        |        |        |        |        |        |
+| a.pdf) |        |        |        |        |        |        |
++--------+--------+--------+--------+--------+--------+--------+
+| [De Li | Mül    | 2 0 0  | no     | 0      | no     | no     |
+| lii    | ler-Do | 2      |        |        |        |        |
+| floris | blies, |        |        |        |        |        |
+| Not    | U., &  |        |        |        |        |        |
+| ulae7. | Mül    |        |        |        |        |        |
+| De     | ler-Do |        |        |        |        |        |
+| d      | blies, |        |        |        |        |        |
+| ecuria | D.     |        |        |        |        |        |
+| altera |        |        |        |        |        |        |
+| spe    |        |        |        |        |        |        |
+| cierum |        |        |        |        |        |        |
+| n      |        |        |        |        |        |        |
+| ovarum |        |        |        |        |        |        |
+| g      |        |        |        |        |        |        |
+| eneris |        |        |        |        |        |        |
+| An     |        |        |        |        |        |        |
+| drocym |        |        |        |        |        |        |
+| biu    |        |        |        |        |        |        |
+| m(Colc |        |        |        |        |        |        |
+| hic    |        |        |        |        |        |        |
+| aceae) |        |        |        |        |        |        |
+| in     |        |        |        |        |        |        |
+| Africa |        |        |        |        |        |        |
+| Au     |        |        |        |        |        |        |
+| strali |        |        |        |        |        |        |
+| s      |        |        |        |        |        |        |
+| .l](ht |        |        |        |        |        |        |
+| %20tps |        |        |        |        |        |        |
+| ://sci |        |        |        |        |        |        |
+| %20-hu |        |        |        |        |        |        |
+| b.se/h |        |        |        |        |        |        |
+| %20ttp |        |        |        |        |        |        |
+| s://on |        |        |        |        |        |        |
+| %20lin |        |        |        |        |        |        |
+| elibra |        |        |        |        |        |        |
+| %20ry. |        |        |        |        |        |        |
+| wiley. |        |        |        |        |        |        |
+| %20com |        |        |        |        |        |        |
+| /doi/e |        |        |        |        |        |        |
+| %20pdf |        |        |        |        |        |        |
+| /10.10 |        |        |        |        |        |        |
+| %2002/ |        |        |        |        |        |        |
+| fedr.2 |        |        |        |        |        |        |
+| %20002 |        |        |        |        |        |        |
+| 90006) |        |        |        |        |        |        |
++--------+--------+--------+--------+--------+--------+--------+
+| [Des   | Cauja  | 2 0 0  | si     | 9      | no,    | si     |
+| igning | pé-Cas | 4      |        |        | pobla  |        |
+| e      | tells, |        |        |        | ciones |        |
+| x-situ | J.,    |        |        |        | por    |        |
+| con    | Pedr   |        |        |        | loc    |        |
+| ser    | ola-Mo |        |        |        | alidad |        |
+| vation | nfort, |        |        |        |        |        |
+| s      | J      |        |        |        |        |        |
+| tra    |        |        |        |        |        |        |
+| tegies |        |        |        |        |        |        |
+| t      |        |        |        |        |        |        |
+| hrough |        |        |        |        |        |        |
+| the a  |        |        |        |        |        |        |
+| sse    |        |        |        |        |        |        |
+| ssment |        |        |        |        |        |        |
+| of     |        |        |        |        |        |        |
+| n      |        |        |        |        |        |        |
+| eutral |        |        |        |        |        |        |
+| g      |        |        |        |        |        |        |
+| enetic |        |        |        |        |        |        |
+| ma     |        |        |        |        |        |        |
+| rkers: |        |        |        |        |        |        |
+| Ap     |        |        |        |        |        |        |
+| pli    |        |        |        |        |        |        |
+| cation |        |        |        |        |        |        |
+| to the |        |        |        |        |        |        |
+| e      |        |        |        |        |        |        |
+| nda    |        |        |        |        |        |        |
+| ngered |        |        |        |        |        |        |
+| And    |        |        |        |        |        |        |
+| roc    |        |        |        |        |        |        |
+| ymbium |        |        |        |        |        |        |
+| gramin |        |        |        |        |        |        |
+| eum    |        |        |        |        |        |        |
+| ](http |        |        |        |        |        |        |
+| %20s:/ |        |        |        |        |        |        |
+| /link. |        |        |        |        |        |        |
+| %20spr |        |        |        |        |        |        |
+| inger. |        |        |        |        |        |        |
+| %20com |        |        |        |        |        |        |
+| /artic |        |        |        |        |        |        |
+| %20le/ |        |        |        |        |        |        |
+| 10.102 |        |        |        |        |        |        |
+| %203/B |        |        |        |        |        |        |
+| :COGE. |        |        |        |        |        |        |
+| %20000 |        |        |        |        |        |        |
+| 002999 |        |        |        |        |        |        |
+| %207.5 |        |        |        |        |        |        |
+| 9502.8 |        |        |        |        |        |        |
+| %208#c |        |        |        |        |        |        |
+| iteas) |        |        |        |        |        |        |
++--------+--------+--------+--------+--------+--------+--------+
+| [Flora | S      | 1 9 8  | si     | 0      | no,    | si     |
+| de     | agredo | 7      |        |        | pobla  |        |
+| Al     | Arnaiz |        |        |        | ciones |        |
+| mería: |        |        |        |        | por    |        |
+| p      |        |        |        |        | loc    |        |
+| lantas |        |        |        |        | alidad |        |
+| v      |        |        |        |        |        |        |
+| asc    |        |        |        |        |        |        |
+| ulares |        |        |        |        |        |        |
+| de la  |        |        |        |        |        |        |
+| provi  |        |        |        |        |        |        |
+| nci    |        |        |        |        |        |        |
+| a](htt |        |        |        |        |        |        |
+| %20ps: |        |        |        |        |        |        |
+| //www. |        |        |        |        |        |        |
+| %20dip |        |        |        |        |        |        |
+| alme.o |        |        |        |        |        |        |
+| %20rg/ |        |        |        |        |        |        |
+| Servic |        |        |        |        |        |        |
+| %20ios |        |        |        |        |        |        |
+| /Anexo |        |        |        |        |        |        |
+| %20s/a |        |        |        |        |        |        |
+| nexosi |        |        |        |        |        |        |
+| %20ea. |        |        |        |        |        |        |
+| nsf/VA |        |        |        |        |        |        |
+| %20nex |        |        |        |        |        |        |
+| os/IEA |        |        |        |        |        |        |
+| %20-FA |        |        |        |        |        |        |
+| -f-c2/ |        |        |        |        |        |        |
+| %20$Fi |        |        |        |        |        |        |
+| le/FA- |        |        |        |        |        |        |
+| %20f-c |        |        |        |        |        |        |
+| 2.pdf) |        |        |        |        |        |        |
++--------+--------+--------+--------+--------+--------+--------+
+| [H     | Cauja  | 2 0 0  | si     | 9      | no,    | si     |
+| ist    | pe-Cas | 8      |        |        | pobla  |        |
+| orical | tells, |        |        |        | ciones |        |
+| bio    | J., J  |        |        |        | por    |        |
+| geo    | ansen, |        |        |        | loc    |        |
+| graphy | R. K., |        |        |        | alidad |        |
+| of And | Memb   |        |        |        |        |        |
+| roc    | rives, |        |        |        |        |        |
+| ymbium | N.,    |        |        |        |        |        |
+| Wi     | Pedr   |        |        |        |        |        |
+| lld    | ola-Mo |        |        |        |        |        |
+| .(Colc | nfort, |        |        |        |        |        |
+| hic    | J.,    |        |        |        |        |        |
+| aceae) | Monts  |        |        |        |        |        |
+| in     | errat, |        |        |        |        |        |
+| A      | J. M., |        |        |        |        |        |
+| frica: | & Ar   |        |        |        |        |        |
+| ev     | danuy, |        |        |        |        |        |
+| idence | A.     |        |        |        |        |        |
+| from   |        |        |        |        |        |        |
+| cpDNA  |        |        |        |        |        |        |
+| RFL    |        |        |        |        |        |        |
+| Ps](ht |        |        |        |        |        |        |
+| %20tps |        |        |        |        |        |        |
+| ://aca |        |        |        |        |        |        |
+| %20dem |        |        |        |        |        |        |
+| ic.oup |        |        |        |        |        |        |
+| %20.co |        |        |        |        |        |        |
+| m/botl |        |        |        |        |        |        |
+| %20inn |        |        |        |        |        |        |
+| ean/ar |        |        |        |        |        |        |
+| %20tic |        |        |        |        |        |        |
+| le/136 |        |        |        |        |        |        |
+| %20/4/ |        |        |        |        |        |        |
+| 379/25 |        |        |        |        |        |        |
+| %20571 |        |        |        |        |        |        |
+| 88?log |        |        |        |        |        |        |
+| %20in= |        |        |        |        |        |        |
+| false) |        |        |        |        |        |        |
++--------+--------+--------+--------+--------+--------+--------+
+| [M     | Del    | 2 0 0  | si     | 9      | no,    | si     |
+| issing | Hoyo,  | 6      |        |        | pobla  |        |
+| Links  | A.,    |        |        |        | ciones |        |
+| B      | Pedr   |        |        |        | por    |        |
+| etween | ola-Mo |        |        |        | loc    |        |
+| Di     | nfort, |        |        |        | alidad |        |
+| sjunct | J.     |        |        |        |        |        |
+| Po     |        |        |        |        |        |        |
+| pul    |        |        |        |        |        |        |
+| ations |        |        |        |        |        |        |
+| of And |        |        |        |        |        |        |
+| roc    |        |        |        |        |        |        |
+| ymbium |        |        |        |        |        |        |
+| (Colc  |        |        |        |        |        |        |
+| hic    |        |        |        |        |        |        |
+| aceae) |        |        |        |        |        |        |
+| in     |        |        |        |        |        |        |
+| Africa |        |        |        |        |        |        |
+| Using  |        |        |        |        |        |        |
+| Ch     |        |        |        |        |        |        |
+| lor    |        |        |        |        |        |        |
+| oplast |        |        |        |        |        |        |
+| DNA    |        |        |        |        |        |        |
+| Non    |        |        |        |        |        |        |
+| coding |        |        |        |        |        |        |
+| Se     |        |        |        |        |        |        |
+| quence |        |        |        |        |        |        |
+| s](htt |        |        |        |        |        |        |
+| ps://s |        |        |        |        |        |        |
+| %20cho |        |        |        |        |        |        |
+| larshi |        |        |        |        |        |        |
+| %20p.c |        |        |        |        |        |        |
+| laremo |        |        |        |        |        |        |
+| %20nt. |        |        |        |        |        |        |
+| edu/cg |        |        |        |        |        |        |
+| %20i/v |        |        |        |        |        |        |
+| iewcon |        |        |        |        |        |        |
+| %20ten |        |        |        |        |        |        |
+| t.cgi? |        |        |        |        |        |        |
+| %20art |        |        |        |        |        |        |
+| icle=1 |        |        |        |        |        |        |
+| %20598 |        |        |        |        |        |        |
+| &conte |        |        |        |        |        |        |
+| %20xt= |        |        |        |        |        |        |
+| aliso) |        |        |        |        |        |        |
++--------+--------+--------+--------+--------+--------+--------+
+| [      | J      | 1 9 9  | si     | 10     | no,    | no     |
+| All    | .  Ped | 4      |        |        | pobla  |        |
+| ozymic |        |        |        |        | ciones |        |
+| and    | rola-M |        |        |        | por    |        |
+| morp   |        |        |        |        | loc    |        |
+| hol    | onfort |        |        |        | alidad |        |
+| ogical |        |        |        |        |        |        |
+| rela   |   & J. |        |        |        |        |        |
+| tio    |        |        |        |        |        |        |
+| nships |   Caju |        |        |        |        |        |
+| among  |        |        |        |        |        |        |
+| And    | apé-Ca |        |        |        |        |        |
+| roc    |        |        |        |        |        |        |
+| ymbium | stells |        |        |        |        |        |
+| g      |        |        |        |        |        |        |
+| ram    |        |        |        |        |        |        |
+| ineum, |        |        |        |        |        |        |
+| A. e   |        |        |        |        |        |        |
+| uro    |        |        |        |        |        |        |
+| paeum, |        |        |        |        |        |        |
+| and A. |        |        |        |        |        |        |
+| psa    |        |        |        |        |        |        |
+| mmo    |        |        |        |        |        |        |
+| philum |        |        |        |        |        |        |
+| (Colch |        |        |        |        |        |        |
+| ica    |        |        |        |        |        |        |
+| ceae)] |        |        |        |        |        |        |
+| (<htt  |        |        |        |        |        |        |
+| ps://> |        |        |        |        |        |        |
+| lin    |        |        |        |        |        |        |
+| k.spri |        |        |        |        |        |        |
+| nge    |        |        |        |        |        |        |
+| r.com/ |        |        |        |        |        |        |
+| art    |        |        |        |        |        |        |
+| icle/1 |        |        |        |        |        |        |
+| 0.1    |        |        |        |        |        |        |
+| 007/BF |        |        |        |        |        |        |
+| 009    |        |        |        |        |        |        |
+| 85346) |        |        |        |        |        |        |
++--------+--------+--------+--------+--------+--------+--------+
+| [G     | J      | 1 9 9  | si     | 10     | no,    | no     |
+| enetic | .  Ped | 6      |        |        | pobla  |        |
+| and    |        |        |        |        | ciones |        |
+| morp   | rola-M |        |        |        | por    |        |
+| hol    |        |        |        |        | loc    |        |
+| ogical | onfort |        |        |        | alidad |        |
+| d      |        |        |        |        |        |        |
+| ive    |   & J. |        |        |        |        |        |
+| rgence |        |        |        |        |        |        |
+| in the |   Caju |        |        |        |        |        |
+| And    |        |        |        |        |        |        |
+| roc    | apé-Ca |        |        |        |        |        |
+| ymbium |        |        |        |        |        |        |
+| gra    | stells |        |        |        |        |        |
+| mineum |        |        |        |        |        |        |
+| c      |        |        |        |        |        |        |
+| omplex |        |        |        |        |        |        |
+| (Colch |        |        |        |        |        |        |
+| ica    |        |        |        |        |        |        |
+| ceae)] |        |        |        |        |        |        |
+| (<htt  |        |        |        |        |        |        |
+| ps://> |        |        |        |        |        |        |
+| lin    |        |        |        |        |        |        |
+| k.spri |        |        |        |        |        |        |
+| nge    |        |        |        |        |        |        |
+| r.com/ |        |        |        |        |        |        |
+| art    |        |        |        |        |        |        |
+| icle/1 |        |        |        |        |        |        |
+| 0.1    |        |        |        |        |        |        |
+| 007/BF |        |        |        |        |        |        |
+| 009    |        |        |        |        |        |        |
+| 89058) |        |        |        |        |        |        |
++--------+--------+--------+--------+--------+--------+--------+
+| The    | Cauja  | 2 0 0  | si     | 9      | no,    | no     |
+| inf    | pé-Cas | 3      |        |        | pobla  |        |
+| luence | tells, |        |        |        | ciones |        |
+| of the | J. and |        |        |        | por    |        |
+| M      | J      |        |        |        | loc    |        |
+| iocene | ansen, |        |        |        | alidad |        |
+| Medi   | R.K    |        |        |        |        |        |
+| ter    |        |        |        |        |        |        |
+| ranean |        |        |        |        |        |        |
+| de     |        |        |        |        |        |        |
+| sic    |        |        |        |        |        |        |
+| cation |        |        |        |        |        |        |
+| on the |        |        |        |        |        |        |
+| geo    |        |        |        |        |        |        |
+| gra    |        |        |        |        |        |        |
+| phical |        |        |        |        |        |        |
+| exp    |        |        |        |        |        |        |
+| ansion |        |        |        |        |        |        |
+| and    |        |        |        |        |        |        |
+| g      |        |        |        |        |        |        |
+| enetic |        |        |        |        |        |        |
+| var    |        |        |        |        |        |        |
+| iation |        |        |        |        |        |        |
+| of And |        |        |        |        |        |        |
+| roc    |        |        |        |        |        |        |
+| ymbium |        |        |        |        |        |        |
+| gra    |        |        |        |        |        |        |
+| mineum |        |        |        |        |        |        |
+| (Cav.) |        |        |        |        |        |        |
+| M      |        |        |        |        |        |        |
+| cBride |        |        |        |        |        |        |
+| (C     |        |        |        |        |        |        |
+| olchic |        |        |        |        |        |        |
+| aceae) |        |        |        |        |        |        |
++--------+--------+--------+--------+--------+--------+--------+
+| [Spa   | J      | 1 9 9  | si     | 1      | no,    | no     |
+| ce-    | .  Ped | 6      |        |        | pob    |        |
+| --time |        |        |        |        | lación |        |
+| pa     | rola-M |        |        |        | por    |        |
+| tterns |        |        |        |        | loc    |        |
+| of     | onfort |        |        |        | alidad |        |
+| g      |        |        |        |        |        |        |
+| enetic |   & J. |        |        |        |        |        |
+| struct |        |        |        |        |        |        |
+| ure    |   Caju |        |        |        |        |        |
+| within |        |        |        |        |        |        |
+| a      | apé-Ca |        |        |        |        |        |
+| stand  |        |        |        |        |        |        |
+| of And | stells |        |        |        |        |        |
+| roc    |        |        |        |        |        |        |
+| ymbium |        |        |        |        |        |        |
+| gra    |        |        |        |        |        |        |
+| mineum |        |        |        |        |        |        |
+| (Cay.) |        |        |        |        |        |        |
+| M      |        |        |        |        |        |        |
+| cBride |        |        |        |        |        |        |
+| (Colc  |        |        |        |        |        |        |
+| hicace |        |        |        |        |        |        |
+| ae)](h |        |        |        |        |        |        |
+| ttps:/ |        |        |        |        |        |        |
+| %20/ww |        |        |        |        |        |        |
+| w.natu |        |        |        |        |        |        |
+| %20re. |        |        |        |        |        |        |
+| com/ar |        |        |        |        |        |        |
+| %20tic |        |        |        |        |        |        |
+| les/hd |        |        |        |        |        |        |
+| %20y19 |        |        |        |        |        |        |
+| 97166) |        |        |        |        |        |        |
++--------+--------+--------+--------+--------+--------+--------+
+| [O     | Elli   | 2 0 0  | no     | 0      | no     | no     |
+| ccu    | ngton, | 3      |        |        |        |        |
+| rrence | E., Ba |        |        |        |        |        |
+| of c   | stida, |        |        |        |        |        |
+| olc    | J.,    |        |        |        |        |        |
+| hicine | Vila   |        |        |        |        |        |
+| de     | domat, |        |        |        |        |        |
+| riv    | F., Si |        |        |        |        |        |
+| atives | manek, |        |        |        |        |        |
+| in     | V., &  |        |        |        |        |        |
+| plants | C      |        |        |        |        |        |
+| of the | odina, |        |        |        |        |        |
+| genus  | C.     |        |        |        |        |        |
+| And    |        |        |        |        |        |        |
+| rocymb |        |        |        |        |        |        |
+| ium](h |        |        |        |        |        |        |
+| ttps:/ |        |        |        |        |        |        |
+| %20/ww |        |        |        |        |        |        |
+| w.scie |        |        |        |        |        |        |
+| %20nce |        |        |        |        |        |        |
+| direct |        |        |        |        |        |        |
+| %20.co |        |        |        |        |        |        |
+| m/scie |        |        |        |        |        |        |
+| %20nce |        |        |        |        |        |        |
+| /artic |        |        |        |        |        |        |
+| %20le/ |        |        |        |        |        |        |
+| pii/S0 |        |        |        |        |        |        |
+| %20305 |        |        |        |        |        |        |
+| 197802 |        |        |        |        |        |        |
+| %20002 |        |        |        |        |        |        |
+| 48X?vi |        |        |        |        |        |        |
+| %20a%3 |        |        |        |        |        |        |
+| Dihub) |        |        |        |        |        |        |
++--------+--------+--------+--------+--------+--------+--------+
+| [      | M      | 1 9 9  | no     | 0      | no     | no     |
+| Pollen | artin, | 3      |        |        |        |        |
+| m      | J.,    |        |        |        |        |        |
+| orp    | Pedr   |        |        |        |        |        |
+| hology | ola-Mo |        |        |        |        |        |
+| and    | nfort, |        |        |        |        |        |
+| bi     | J.,    |        |        |        |        |        |
+| ometry | Ca     |        |        |        |        |        |
+| in And | ujapé, |        |        |        |        |        |
+| roc    | J.     |        |        |        |        |        |
+| ymbium |        |        |        |        |        |        |
+| (C     |        |        |        |        |        |        |
+| olchic |        |        |        |        |        |        |
+| ace    |        |        |        |        |        |        |
+| ae)](h |        |        |        |        |        |        |
+| %20ttp |        |        |        |        |        |        |
+| s://cd |        |        |        |        |        |        |
+| %20nsc |        |        |        |        |        |        |
+| iencep |        |        |        |        |        |        |
+| %20ub. |        |        |        |        |        |        |
+| com/do |        |        |        |        |        |        |
+| %20i/1 |        |        |        |        |        |        |
+| 0.1139 |        |        |        |        |        |        |
+| %20/b9 |        |        |        |        |        |        |
+| 3-163) |        |        |        |        |        |        |
++--------+--------+--------+--------+--------+--------+--------+
+| [Kar   | Ma     | 1 9 9  | no     | 9      | no,    | no     |
+| yol    | rgelí, | 9      |        |        | pobla  |        |
+| ogical | M.,    |        |        |        | ciones |        |
+| S      | Pedr   |        |        |        | por    |        |
+| tudies | ola-Mo |        |        |        | loc    |        |
+| in the | nfort, |        |        |        | alidad |        |
+| Genus  | J., V  |        |        |        |        |        |
+| And    | allés, |        |        |        |        |        |
+| roc    | J.     |        |        |        |        |        |
+| ymbium |        |        |        |        |        |        |
+| (C     |        |        |        |        |        |        |
+| olc    |        |        |        |        |        |        |
+| hicace |        |        |        |        |        |        |
+| ae)    |        |        |        |        |        |        |
+| ](http |        |        |        |        |        |        |
+| %20s:/ |        |        |        |        |        |        |
+| /www.p |        |        |        |        |        |        |
+| %20ubl |        |        |        |        |        |        |
+| ish.cs |        |        |        |        |        |        |
+| %20iro |        |        |        |        |        |        |
+| .au/bt |        |        |        |        |        |        |
+| %20/BT |        |        |        |        |        |        |
+| 97006) |        |        |        |        |        |        |
++--------+--------+--------+--------+--------+--------+--------+
+| [Co    | Cauja  | 1 9 9  | no     | 0      | no     | no     |
+| ntr    | pé-Cas | 9      |        |        |        |        |
+| asting | tells, |        |        |        |        |        |
+| pa     | J.,    |        |        |        |        |        |
+| tterns | Pedr   |        |        |        |        |        |
+| of     | ola-Mo |        |        |        |        |        |
+| g      | nfort, |        |        |        |        |        |
+| enetic | J.,    |        |        |        |        |        |
+| str    | Memb   |        |        |        |        |        |
+| ucture | rives, |        |        |        |        |        |
+| in the | N.     |        |        |        |        |        |
+| South  |        |        |        |        |        |        |
+| A      |        |        |        |        |        |        |
+| frican |        |        |        |        |        |        |
+| s      |        |        |        |        |        |        |
+| pecies |        |        |        |        |        |        |
+| And    |        |        |        |        |        |        |
+| roc    |        |        |        |        |        |        |
+| ymbium |        |        |        |        |        |        |
+| b      |        |        |        |        |        |        |
+| ellum, |        |        |        |        |        |        |
+| A.     |        |        |        |        |        |        |
+| gu     |        |        |        |        |        |        |
+| ttatum |        |        |        |        |        |        |
+| and A. |        |        |        |        |        |        |
+| pu     |        |        |        |        |        |        |
+| lchrum |        |        |        |        |        |        |
+| (Colc  |        |        |        |        |        |        |
+| hicace |        |        |        |        |        |        |
+| ae)](h |        |        |        |        |        |        |
+| ttps:/ |        |        |        |        |        |        |
+| %20/ww |        |        |        |        |        |        |
+| w.scie |        |        |        |        |        |        |
+| %20nce |        |        |        |        |        |        |
+| direct |        |        |        |        |        |        |
+| %20.co |        |        |        |        |        |        |
+| m/scie |        |        |        |        |        |        |
+| %20nce |        |        |        |        |        |        |
+| /artic |        |        |        |        |        |        |
+| %20le/ |        |        |        |        |        |        |
+| pii/S0 |        |        |        |        |        |        |
+| %20305 |        |        |        |        |        |        |
+| 197898 |        |        |        |        |        |        |
+| %20001 |        |        |        |        |        |        |
+| 306?vi |        |        |        |        |        |        |
+| %20a%3 |        |        |        |        |        |        |
+| Dihub) |        |        |        |        |        |        |
++--------+--------+--------+--------+--------+--------+--------+
+| [Re    | Memb   | 2 0 0  | no     | 0      | no     | no     |
+| lative | rives, | 1      |        |        |        |        |
+| inf    | N.Pedr |        |        |        |        |        |
+| luence | ola-Mo |        |        |        |        |        |
+| of b   | nfort, |        |        |        |        |        |
+| iol    | J.,    |        |        |        |        |        |
+| ogical | Cauja  |        |        |        |        |        |
+| versus | pé-Cas |        |        |        |        |        |
+| h      | tells, |        |        |        |        |        |
+| ist    | J.     |        |        |        |        |        |
+| orical |        |        |        |        |        |        |
+| f      |        |        |        |        |        |        |
+| actors |        |        |        |        |        |        |
+| on     |        |        |        |        |        |        |
+| i      |        |        |        |        |        |        |
+| sozyme |        |        |        |        |        |        |
+| var    |        |        |        |        |        |        |
+| iation |        |        |        |        |        |        |
+| of the |        |        |        |        |        |        |
+| genus  |        |        |        |        |        |        |
+| And    |        |        |        |        |        |        |
+| roc    |        |        |        |        |        |        |
+| ymbium |        |        |        |        |        |        |
+| (Colc  |        |        |        |        |        |        |
+| hic    |        |        |        |        |        |        |
+| aceae) |        |        |        |        |        |        |
+| in A   |        |        |        |        |        |        |
+| fri    |        |        |        |        |        |        |
+| ca](ht |        |        |        |        |        |        |
+| %20tps |        |        |        |        |        |        |
+| ://lin |        |        |        |        |        |        |
+| %20k.s |        |        |        |        |        |        |
+| pringe |        |        |        |        |        |        |
+| %20r.c |        |        |        |        |        |        |
+| om/art |        |        |        |        |        |        |
+| %20icl |        |        |        |        |        |        |
+| e/10.1 |        |        |        |        |        |        |
+| %20007 |        |        |        |        |        |        |
+| /s0060 |        |        |        |        |        |        |
+| %20601 |        |        |        |        |        |        |
+| 70013) |        |        |        |        |        |        |
++--------+--------+--------+--------+--------+--------+--------+
+| [All   | M      | 2 0 0  | no     | 0      | no     | no     |
+| ozymic | ateu-A | 8      |        |        |        |        |
+| var    | ndrés, |        |        |        |        |        |
+| iation | I.     |        |        |        |        |        |
+| and d  |        |        |        |        |        |        |
+| ive    |        |        |        |        |        |        |
+| rgence |        |        |        |        |        |        |
+| in thr |        |        |        |        |        |        |
+| ees    |        |        |        |        |        |        |
+| pecies |        |        |        |        |        |        |
+| of Ant |        |        |        |        |        |        |
+| irr    |        |        |        |        |        |        |
+| hinurn |        |        |        |        |        |        |
+| L.     |        |        |        |        |        |        |
+| (S     |        |        |        |        |        |        |
+| crophu |        |        |        |        |        |        |
+| lar    |        |        |        |        |        |        |
+| iaceae |        |        |        |        |        |        |
+| -An    |        |        |        |        |        |        |
+| tirrhi |        |        |        |        |        |        |
+| nea    |        |        |        |        |        |        |
+| e)](ht |        |        |        |        |        |        |
+| %20tps |        |        |        |        |        |        |
+| ://aca |        |        |        |        |        |        |
+| %20dem |        |        |        |        |        |        |
+| ic.oup |        |        |        |        |        |        |
+| %20.co |        |        |        |        |        |        |
+| m/botl |        |        |        |        |        |        |
+| %20inn |        |        |        |        |        |        |
+| ean/ar |        |        |        |        |        |        |
+| %20tic |        |        |        |        |        |        |
+| le/131 |        |        |        |        |        |        |
+| %20/2/ |        |        |        |        |        |        |
+| 187/25 |        |        |        |        |        |        |
+| %20671 |        |        |        |        |        |        |
+| 28?log |        |        |        |        |        |        |
+| %20in= |        |        |        |        |        |        |
+| false) |        |        |        |        |        |        |
++--------+--------+--------+--------+--------+--------+--------+
+| [Plant | Franc  | 2 0 0  | no     | 0      | no     | no     |
+| g      | isco-O | 0      |        |        |        |        |
+| enetic | rtega, |        |        |        |        |        |
+| div    | J., Sa |        |        |        |        |        |
+| ersity | ntos-G |        |        |        |        |        |
+| in the | uerra, |        |        |        |        |        |
+| Canary | A.,    |        |        |        |        |        |
+| Is     | Chul   |        |        |        |        |        |
+| lands: | Kim,   |        |        |        |        |        |
+| a con  | S.,    |        |        |        |        |        |
+| ser    | Cra    |        |        |        |        |        |
+| vation | wford, |        |        |        |        |        |
+| p      | D. J.  |        |        |        |        |        |
+| ers    |        |        |        |        |        |        |
+| pectiv |        |        |        |        |        |        |
+| e](    |        |        |        |        |        |        |
+| https: |        |        |        |        |        |        |
+| %20//b |        |        |        |        |        |        |
+| sapubs |        |        |        |        |        |        |
+| %20.on |        |        |        |        |        |        |
+| lineli |        |        |        |        |        |        |
+| %20bra |        |        |        |        |        |        |
+| ry.wil |        |        |        |        |        |        |
+| %20ey. |        |        |        |        |        |        |
+| com/do |        |        |        |        |        |        |
+| %20i/1 |        |        |        |        |        |        |
+| 0.2307 |        |        |        |        |        |        |
+| %20/26 |        |        |        |        |        |        |
+| 56988) |        |        |        |        |        |        |
++--------+--------+--------+--------+--------+--------+--------+
