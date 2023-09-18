@@ -1,0 +1,82 @@
+---
+title: "index.Rmd"
+author: "Claudia Tribaldos"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+ejemplo
+```{r}
+library(sf)
+presencia <- st_read("C:/Users/triba/Desktop/UGR/TFM/modelo_androcymbium/rawdata/presencia_ok.shp") 
+
+presencia <- st_transform(presencia, 4326)
+presencia
+plot(st_geometry(presencia))
+```
+
+
+datos reales 
+```{r}
+library(sp)
+basedatos <- read.csv("C:/Users/triba/Desktop/UGR/TFM/VISOR/basedatos_visor.csv", header=TRUE, sep=",", dec=".") #error in read.table: more columns than column names 
+
+#lo hacemos mejor con excel 
+library(readxl)
+basedatos <- read_excel("C:/Users/triba/Desktop/UGR/TFM/VISOR/basedatos_visor1.xlsx")
+basedatos[93,2] <- 36.4858
+
+#transformar a objeto espacial 
+basedatos <- SpatialPointsDataFrame(basedatos[,1:2], basedatos, proj4string = CRS("+init=epsg:4326"))
+
+basedatos<- st_as_sf(basedatos)
+basedatos
+```
+
+Creación de la paleta y los pop ups
+```{r}
+library(leaflet)
+#install.packages("leafem")
+library(leafem)
+
+#para poner colores distintos por fuente 
+pal <- colorFactor(palette="Set 1", domain=basedatos$fuente)
+#palette.pals() #para ver las paletas de colores disponibles 
+pal <- palette("Set 1")
+
+popup_basedatos <- paste0("<strong> X:</strong> ", basedatos$x, 
+                          "<strong> Y: </strong> ", basedatos$y, 
+                          "<strong> Fuente: </strong> ", basedatos$fuente)
+```
+
+Creación del mapa 
+
+```{r}
+mapa <- leaflet() %>% 
+  addTiles()  %>% 
+  addCircleMarkers(data= basedatos, 
+                   radius = 3, 
+                   stroke = FALSE, 
+                   color = ~pal, #pal =palette("Set 1") y ~pal funciona bien sin leyenda
+                   fillOpacity = 0.8, 
+                   group = c("CSIC-RJB-MA", "herbarioValencia", "GBIF", "Anthos", "SERPAM",                               "DelHoyo&Pedrola2010"),
+                   popup = popup_basedatos) %>% 
+  addProviderTiles("Esri.WorldImagery",
+                   group = "Satellite (ESRI)") %>% 
+  addLayersControl(position = 'bottomright',
+                   baseGroups = c('Open Street Map', 'Satellite (ESRI)'), 
+                   overlayGroups = c("CSIC-RJB-MA", "herbarioValencia", "GBIF", "Anthos",                         "SERPAM", "DelHoyo&Pedrola2010"),  
+                   options = layersControlOptions(collapsed = TRUE)) %>% 
+  addMouseCoordinates()
+ 
+mapa 
+
+#addLegend('bottomleft', pal= pal, values=~fuente,  title = "Fuentes",  opacity = 1)
+
+```
+
