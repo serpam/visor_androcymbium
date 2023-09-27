@@ -24,7 +24,7 @@ plot(st_geometry(presencia))
 datos reales 
 ```{r}
 library(sp)
-basedatos <- read.csv("C:/Users/triba/Desktop/UGR/TFM/VISOR/basedatos_visor.csv", header=TRUE, sep=",", dec=".") #error in read.table: more columns than column names 
+#basedatos <- read.csv("C:/Users/triba/Desktop/UGR/TFM/VISOR/basedatos_visor.csv", header=TRUE, sep=",", dec=".") #error in read.table: more columns than column names 
 
 #lo hacemos mejor con excel 
 library(readxl)
@@ -78,5 +78,10 @@ mapa
 
 #addLegend('bottomleft', pal= pal, values=~fuente,  title = "Fuentes",  opacity = 1)
 
+```
+```{r}
+#install.packages("htmlwidgets")
+library(htmlwidgets)
+saveWidget(mapa, "index.html")
 ```
 
