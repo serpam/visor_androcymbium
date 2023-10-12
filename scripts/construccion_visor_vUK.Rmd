@@ -31,7 +31,11 @@ library('here')
 here()
 basedatos <- read_excel("C:/Users/Ignacio/Desktop/Máster en Conservación de la Biodivesidad/Prácticas externas/visor_androcymbium/data/basedatos_visor.xlsx")
 basedatos_vars <- read_excel("C:/Users/Ignacio/Desktop/Máster en Conservación de la Biodivesidad/Prácticas externas/visor_androcymbium/data/basedatos_variables.xlsx")
+
+basedatos_refs <- read_excel("C:/Users/Ignacio/Desktop/Máster en Conservación de la Biodivesidad/Prácticas externas/visor_androcymbium/data/basedatos_referencias.xlsx")
+
 basedatos[93,2] <- 36.4858
+
 
 #transformar a objeto espacial 
 basedatos <- SpatialPointsDataFrame(basedatos[,2:3], basedatos, proj4string = CRS("+init=epsg:4326"))
@@ -144,6 +148,20 @@ Tabla de variables
 ```{r echo=FALSE}
 DT::datatable(
   basedatos_vars,
+  filter = "top",
+  extensions = "Scroller",
+  rownames = FALSE,
+  style = "bootstrap",
+  class = "compact",
+  width = "100%",
+  options = list(deferRender = TRUE, scroller = TRUE))
+```
+
+Tabla de referencias
+=============================================================================
+```{r echo=FALSE}
+DT::datatable(
+  basedatos_refs,
   filter = "top",
   extensions = "Scroller",
   rownames = FALSE,
